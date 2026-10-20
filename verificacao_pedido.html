@@ -538,22 +538,22 @@
 <rect height="15" rx="2" width="15" x="80" y="80"></rect>
 <rect height="15" rx="2" width="12" x="40" y="75"></rect>
 </svg>
-<span class="font-label-sm text-[10px] text-outline mt-2 tracking-wider">PIX DINÂMICO BACEN</span>
+<span class="font-label-sm text-[10px] text-outline mt-2 tracking-wider">PIX NÃO CONFIGURADO</span>
 </div>
 <div class="flex-1 w-full">
 <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm mb-2">
 <span class="material-symbols-outlined text-[14px]">bolt</span>
-                      Economize R$ 17,48 no Pix
+                      Desconto Pix indisponível
                     </span>
-<h4 class="font-headline-sm text-[18px] text-on-surface mb-1">Chave Pix Copia e Cola</h4>
+<h4 class="font-headline-sm text-[18px] text-on-surface mb-1">Pix indisponível</h4>
 <p class="font-body-sm text-body-sm text-on-surface-variant mb-3">
-                      A aprovação é instantânea. As artesãs de Picuí e região iniciam o preparo e embalagem das peças no mesmo dia útil!
+                      Nenhuma cobrança ou chave Pix será exibida até a integração com o Mercado Pago estar configurada.
                     </p>
 <div class="flex items-center gap-2">
-<input class="w-full h-11 px-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm truncate focus:outline-none shadow-sm" readonly="" type="text" value="00020126580014br.gov.bcb.pix0136feito-no-serido-coop-picui-pb5204000053039865406338.035802BR"/>
-<button class="px-4 h-11 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container shrink-0 transition-colors flex items-center gap-1" onclick="navigator.clipboard.writeText('00020126580014br.gov.bcb.pix0136feito-no-serido-coop-picui-pb5204000053039865406338.035802BR'); alert('Chave Pix copiada com sucesso!');" type="button">
+<input class="w-full h-11 px-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm truncate focus:outline-none shadow-sm" disabled="" placeholder="Aguardando configuração do pagamento" readonly="" type="text" value=""/>
+<button class="px-4 h-11 rounded-lg bg-surface-container text-outline font-label-md text-label-md shrink-0 transition-colors flex items-center gap-1" disabled="" type="button">
 <span class="material-symbols-outlined text-[18px]">content_copy</span>
-                        Copiar
+                        Indisponível
                       </button>
 </div>
 </div>
@@ -565,25 +565,25 @@
 <div class="sm:col-span-2">
 <label class="block font-label-md text-label-md text-on-surface mb-1 font-semibold">Número do Cartão</label>
 <div class="relative">
-<input class="w-full h-12 pl-4 pr-12 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-inner focus:outline-none focus:ring-2 focus:ring-primary" name="cartao_numero" placeholder="0000 0000 0000 0000" type="text"/>
+<input class="w-full h-12 pl-4 pr-12 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-inner focus:outline-none focus:ring-2 focus:ring-primary" autocomplete="off" disabled="" placeholder="Checkout seguro ainda não configurado" type="text"/>
 <span class="material-symbols-outlined absolute right-3 top-3 text-outline">credit_card</span>
 </div>
 </div>
 <div class="sm:col-span-2">
 <label class="block font-label-md text-label-md text-on-surface mb-1 font-semibold">Nome impresso no cartão</label>
-<input class="w-full h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-inner focus:outline-none focus:ring-2 focus:ring-primary" name="cartao_nome" placeholder="Como está gravado no cartão" type="text"/>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-inner focus:outline-none focus:ring-2 focus:ring-primary" autocomplete="off" disabled="" placeholder="Indisponível" type="text"/>
 </div>
 <div>
 <label class="block font-label-md text-label-md text-on-surface mb-1 font-semibold">Validade (MM/AA)</label>
-<input class="w-full h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-inner focus:outline-none focus:ring-2 focus:ring-primary" name="cartao_validade" placeholder="12/28" type="text"/>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-inner focus:outline-none focus:ring-2 focus:ring-primary" autocomplete="off" disabled="" placeholder="Indisponível" type="text"/>
 </div>
 <div>
 <label class="block font-label-md text-label-md text-on-surface mb-1 font-semibold">Código CVV</label>
-<input class="w-full h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-inner focus:outline-none focus:ring-2 focus:ring-primary" name="cartao_cvv" placeholder="123" type="text"/>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-inner focus:outline-none focus:ring-2 focus:ring-primary" autocomplete="off" disabled="" placeholder="Indisponível" type="text"/>
 </div>
 <div class="sm:col-span-2">
 <label class="block font-label-md text-label-md text-on-surface mb-1 font-semibold">Parcelamento sem acréscimo</label>
-<select class="w-full h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-inner focus:outline-none focus:ring-2 focus:ring-primary cursor-pointer" name="parcelas">
+<select class="w-full h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-inner focus:outline-none focus:ring-2 focus:ring-primary cursor-pointer" disabled="">
 <option value="1">1x de R$ 338,03 sem juros</option>
 <option value="2">2x de R$ 169,01 sem juros</option>
 <option value="3">3x de R$ 112,67 sem juros</option>
@@ -598,10 +598,10 @@
 <div>
 <h4 class="font-headline-sm text-[18px] text-on-surface mb-1">Boleto Bancário Regional</h4>
 <p class="font-body-sm text-body-sm text-on-surface-variant mb-2">
-                      O boleto será gerado com vencimento para 3 dias úteis. Você pode pagar em qualquer banco, casa lotérica em Picuí ou aplicativo móvel.
+                      A emissão de boleto ainda não está conectada ao Mercado Pago.
                     </p>
 <p class="font-label-sm text-label-sm text-outline">
-                      *A confirmação bancária do boleto leva de 1 a 2 dias úteis para liberação do envio pelas produtoras.
+                      Nenhum boleto será gerado até a integração estar ativa.
                     </p>
 </div>
 </div>
@@ -611,10 +611,10 @@
 <span class="material-symbols-outlined text-secondary text-[28px] shrink-0">shield</span>
 <div class="text-center sm:text-left">
 <span class="font-label-md text-label-md font-bold text-on-surface block">
-                    Pagamento 100% Protegido · Circuito Fechado Seridó
+                    Pagamento não configurado
                   </span>
 <span class="font-body-sm text-body-sm text-on-surface-variant">
-                    Seus dados trafegam criptografados. O valor só é repassado definitivamente às contas das artesãs após a confirmação da expedição.
+                    Nenhuma cobrança será criada enquanto o gateway e os repasses não estiverem configurados.
                   </span>
 </div>
 </div>
@@ -721,9 +721,9 @@
 </div>
 </div>
 <!-- Botão Principal de Finalização -->
-<button class="w-full h-14 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 group cursor-pointer" type="submit">
+<button class="w-full h-14 rounded-xl bg-surface-container text-outline font-label-lg text-label-lg font-bold transition-all flex items-center justify-center gap-2 cursor-not-allowed" disabled="" type="submit">
 <span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-110">lock</span>
-<span>Finalizar Pedido com Segurança</span>
+<span>Pagamento indisponível</span>
 </button>
 </div>
 <!-- Box de Transparência Social / Comércio Justo -->
