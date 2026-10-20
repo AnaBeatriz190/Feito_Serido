@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><title>Espaço da Produtora - Feito no Seridó</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-bright": "#fff8f6",
+          "surface-container": "#f7ebe8",
+          "on-primary-container": "#fffbff",
+          "surface-container-high": "#f2e6e2",
+          "secondary-fixed-dim": "#abd0a3",
+          "primary-fixed-dim": "#ffb59c",
+          "inverse-on-surface": "#faeeeb",
+          "on-error": "#ffffff",
+          "on-secondary-container": "#4b6d46",
+          "error-container": "#ffdad6",
+          "on-primary": "#ffffff",
+          "outline-variant": "#dec0b7",
+          "surface-variant": "#ece0dd",
+          "outline": "#8a726a",
+          "on-surface": "#201a18",
+          "on-background": "#201a18",
+          "on-tertiary": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "surface": "#fff8f6",
+          "on-tertiary-fixed-variant": "#633f00",
+          "on-secondary": "#ffffff",
+          "on-primary-fixed-variant": "#822801",
+          "primary-container": "#bf542c",
+          "on-secondary-fixed-variant": "#2e4e2b",
+          "tertiary-container": "#9f6a0b",
+          "error": "#ba1a1a",
+          "on-surface-variant": "#57423b",
+          "background": "#fff8f6",
+          "on-secondary-fixed": "#032104",
+          "surface-dim": "#e3d8d4",
+          "on-tertiary-container": "#fffbff",
+          "secondary-container": "#c7edbd",
+          "on-tertiary-fixed": "#291800",
+          "secondary": "#466641",
+          "inverse-surface": "#352f2d",
+          "primary-fixed": "#ffdbcf",
+          "surface-container-highest": "#ece0dd",
+          "on-error-container": "#93000a",
+          "surface-tint": "#a23e18",
+          "tertiary-fixed-dim": "#fcba5b",
+          "secondary-fixed": "#c7edbd",
+          "inverse-primary": "#ffb59c",
+          "primary": "#9f3c16",
+          "tertiary": "#7f5300",
+          "on-primary-fixed": "#390c00",
+          "surface-container-low": "#fdf1ed",
+          "tertiary-fixed": "#ffddb4"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin-desktop": "3rem",
+          "margin": "1rem",
+          "space-md": "1rem",
+          "space-xs": "0.25rem",
+          "gutter": "1rem",
+          "space-lg": "1.5rem",
+          "space-sm": "0.5rem",
+          "margin-tablet": "2rem",
+          "space-xl": "2.5rem",
+          "gutter-desktop": "1.5rem"
+        },
+        "fontFamily": {
+          "headline-md": ["Playfair Display"],
+          "body-md": ["Plus Jakarta Sans"],
+          "body-sm": ["Plus Jakarta Sans"],
+          "headline-lg-mobile": ["Playfair Display"],
+          "headline-lg": ["Playfair Display"],
+          "display-lg": ["Playfair Display"],
+          "label-md": ["Plus Jakarta Sans"],
+          "display-lg-mobile": ["Playfair Display"],
+          "label-lg": ["Plus Jakarta Sans"],
+          "body-lg": ["Plus Jakarta Sans"],
+          "label-sm": ["Plus Jakarta Sans"],
+          "headline-sm": ["Playfair Display"]
+        },
+        "fontSize": {
+          "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+          "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+          "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+          "headline-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "0", "fontWeight": "600"}],
+          "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+          "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+          "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+          "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700"}],
+          "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-xl shadow-[0_2px_12px_rgba(32,26,24,0.06)]"><div class="h-16 px-margin lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-3 shrink-0" data-path="inicio" href="#"><img alt="Feito no Seridó Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UpOLnYeCV5tFQw4WoaF16XFaKh3DSoiob6OYjmUie3YoOOTLYl1ntFFpeuzV8wBt8pttb9x62g2mj6vpnp51vlJEuP4kAHgkz8aljHNTn--EAq_KOde3md_uBPeCtdWONTaYiuNI88Vs5ZMGE7tY9-yZTJFbc0HPRcXKscIl2OFOfBomnB6LryTQ0gjjzDxSv8Aayz81zzwpo_ZmREwaxsXD84gcMAnSVoWooDha_ZaFUtGnou53vxrgqt"/><div class="flex flex-col"><span class="font-headline-sm text-[18px] text-primary leading-tight">Feito no Seridó</span><span class="font-label-sm text-[10px] text-secondary font-semibold uppercase tracking-wider">Portal da Produtora</span></div></a><div class="hidden md:flex items-center gap-2 pl-space-md border-l border-surface-container"><span class="w-2.5 h-2.5 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Oficina Conectada • Picuí / PB</span></div></div><div class="flex items-center gap-space-sm sm:gap-space-md shrink-0"><a class="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container-high text-primary hover:bg-surface-container font-label-md text-label-md transition-colors" data-path="loja-dona-zefinha" href="#"><span class="material-symbols-outlined text-[18px]">storefront</span><span>Ver Minha Loja Pública</span></a><div class="flex items-center gap-2 pl-space-sm"><div class="relative flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-full"><img alt="Dona Zefinha Foto" class="w-8 h-8 rounded-full object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNv975xR_-4C4B3agFJcrxSI5xuLR3AHltISP-EM5zBI4sn8AMhxGbv9tJoklGjxrd5sP1Qgiy58Cz1JkY3VZsAwPdZNLIi5wojAMheIIKrC56_xHTO-uc0cRnwIfBV2VGfPjVknGcQiHecJhQEtKLuf-_Gvfl1Ey152UGCAkjgL6W3jrBpqsPrsEVAi_Nz-MrMYBXR8AV7LAjXC7hEkNM94uEe6QC9zWGK__4veChrPFuGaPH5hKVmQ"/><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-bold leading-tight">Dona Zefinha</span><span class="font-label-sm text-[10px] text-outline leading-tight">Bairro Limeira, Picuí - PB</span></div><span class="material-symbols-outlined text-outline text-[18px] ml-1">expand_more</span></div></div></div></div></header><div class="flex w-full min-h-screen"><aside class="w-64 fixed top-16 bottom-0 left-0 z-40 bg-surface-container-low flex flex-col justify-between p-space-md overflow-y-auto"><div class="flex flex-col gap-space-md"><div class="p-space-sm rounded-xl bg-surface-container"><span class="font-label-sm text-[10px] uppercase font-bold text-secondary tracking-wider block mb-1">Artesã Credenciada</span><p class="font-headline-sm text-headline-sm text-on-surface text-[15px] leading-tight">Ateliê Bairro Limeira</p><span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Renda de Labirinto &amp; Crivo</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-surface-container text-primary font-bold shadow-sm"><a class="px-space-md py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container/60 hover:text-on-surface transition-colors whitespace-nowrap" data-path="painel-artesa" href="#">Visão Geral</a><a class="px-space-md py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container/60 hover:text-on-surface transition-colors whitespace-nowrap" data-path="pedidos-despachos" href="#">Meus Pedidos &amp; Despachos</a><a class="px-space-md py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container/60 hover:text-on-surface transition-colors whitespace-nowrap" data-path="catalogo-pecas" href="#">Catálogo de Peças</a><a class="px-space-md py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container/60 hover:text-on-surface transition-colors whitespace-nowrap" data-path="repasses-financeiro" href="#">Repasses &amp; Financeiro</a><a class="px-space-md py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container/60 hover:text-on-surface transition-colors whitespace-nowrap" data-path="mensagens-clientes" href="#">Mensagens das Compradoras</a><a class="px-space-md py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container/60 hover:text-on-surface transition-colors whitespace-nowrap" data-path="selo-origem-doc" href="#">Selo de Origem Picuí</a></nav></div><div class="flex flex-col gap-2 pt-space-md border-t border-surface-container"><a class="flex items-center justify-between px-3 py-2 rounded-lg bg-surface text-on-surface-variant hover:text-primary transition-colors text-left" data-path="ajuda-artesa" href="#"><span class="font-label-sm text-label-sm font-semibold">Dúvidas com Envio</span><span class="material-symbols-outlined text-[16px]">support</span></a><a class="font-label-sm text-label-sm text-outline hover:text-error transition-colors px-3 py-1" data-path="inicio" href="#">Sair do Painel</a></div></aside><main class="flex-1 pt-16 pl-64 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Greeting & Atmospheric Header Banner -->
+<div class="relative overflow-hidden bg-surface-container-low px-margin lg:px-margin-desktop py-space-xl">
+<div class="absolute -right-20 -top-20 w-96 h-96 rounded-full bg-primary-fixed/30 blur-3xl pointer-events-none"></div>
+<div class="absolute right-1/3 -bottom-24 w-80 h-80 rounded-full bg-secondary-container/40 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-lg max-w-7xl mx-auto">
+<div class="flex flex-col gap-2 max-w-2xl">
+<div class="inline-flex items-center gap-2 self-start px-3 py-1 rounded-full bg-secondary-container/80 text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="font-label-sm text-label-sm">Comunidade Ativa • Picuí, Seridó Oriental</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">
+          Bom dia, Dona Zefinha! ☀️
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Hoje o sol nasceu sereno no Bairro Limeira. Você tem 3 encomendas na roca e 2 peças cheirosas com alecrim prontas para entrega.
+        </p>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<button class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary-container transition-all active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>+ Cadastrar Nova Peça no Catálogo</span>
+</button>
+<button class="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-surface-container text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">pause_circle</span>
+<span>Avisar Pausa para Férias / Fio</span>
+</button>
+</div>
+</div>
+</div>
+<div class="px-margin lg:px-margin-desktop py-space-xl max-w-7xl mx-auto w-full flex flex-col gap-space-xl">
+<!-- Daily Status: 4 Bento Cards -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between gap-space-md group hover:shadow-md transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Na Roca &amp; Bastidor</span>
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">auto_stories</span>
+</div>
+</div>
+<div>
+<span class="font-display-lg text-display-lg text-primary leading-none">3</span>
+<p class="font-headline-sm text-headline-sm text-on-surface mt-1">Para Produzir</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-1">Linho desfiando no ateliê</span>
+</div>
+<div class="pt-space-sm bg-surface-container-low/50 rounded-lg px-2.5 py-1.5 flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span class="font-label-sm text-label-sm font-semibold">1 com prazo para amanhã</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between gap-space-md group hover:shadow-md transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Prontos &amp; Cheirosos</span>
+<div class="w-10 h-10 rounded-xl bg-secondary-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">package_2</span>
+</div>
+</div>
+<div>
+<span class="font-display-lg text-display-lg text-secondary leading-none">2</span>
+<p class="font-headline-sm text-headline-sm text-on-surface mt-1">Prontos p/ Retirada</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-1">1 no Ponto Central • 1 no Ateliê</span>
+</div>
+<div class="pt-space-sm bg-secondary-container/30 rounded-lg px-2.5 py-1.5 flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+<span class="font-label-sm text-label-sm font-semibold">Coleta comunitária às 16h</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between gap-space-md group hover:shadow-md transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Direto na Sua Conta</span>
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">payments</span>
+</div>
+</div>
+<div>
+<span class="font-display-lg text-display-lg text-on-surface leading-none">R$ 1.840</span>
+<p class="font-headline-sm text-headline-sm text-on-surface mt-1">Repasse do Mês</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-1">Líquido e 100% repassado via Pix</span>
+</div>
+<div class="pt-space-sm bg-surface-container rounded-lg px-2.5 py-1.5 flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span class="font-label-sm text-label-sm">Sem taxas abusivas de intermediários</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between gap-space-md group hover:shadow-md transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Carinho do Público</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface leading-none">5.0</span>
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface mt-1">Nota das Compradoras</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-1">42 elogios registrados com afeto</span>
+</div>
+<div class="pt-space-sm bg-surface-container-low rounded-lg px-2.5 py-1.5 flex items-center gap-1.5 text-on-surface-variant">
+<span class="font-label-sm text-label-sm italic truncate">"O linho mais macio que já toquei!"</span>
+</div>
+</div>
+</section>
+<!-- Main Content Section: Orders & Support Hub Split -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Left 8 Cols: Orders Management -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Section Header with Filter Tabs -->
+<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[28px]">format_list_bulleted</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Gestão de Encomendas</h2>
+</div>
+<div class="flex items-center gap-1 bg-surface-container p-1 rounded-xl overflow-x-auto">
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container-lowest font-label-md text-label-md text-primary font-bold shadow-sm whitespace-nowrap" type="button">
+              Todos (5)
+            </button>
+<button class="px-3.5 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-colors" type="button">
+              Produzindo (3)
+            </button>
+<button class="px-3.5 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-colors" type="button">
+              Prontos (2)
+            </button>
+<button class="px-3.5 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-colors" type="button">
+              Entregues
+            </button>
+</div>
+</div>
+<!-- Order Card 1: Em Produção / Retirada Picuí -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+                #FNS-2025-0842
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Recebido hoje às 08:15</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+              Em produção no ateliê • Tecendo linho
+            </div>
+</div>
+<!-- Customer & Artisan Split -->
+<div class="flex flex-col md:flex-row gap-space-md md:items-center justify-between bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-headline-sm text-headline-sm font-bold shrink-0">
+                MA
+              </div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-bold">Maria Alice Vasconcelos</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cliente Habitual • João Pessoa - PB</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 md:text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Seu Ganho Líquido:</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">R$ 249,00</span>
+</div>
+</div>
+<!-- Items detail with tactile visual -->
+<div class="flex flex-col sm:flex-row gap-space-md items-start">
+<div class="w-full sm:w-28 h-28 rounded-xl overflow-hidden shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close-up of handmade white lace embroidery known as renda de labirinto on natural unbleached raw linen cloth, soft morning sunlight casting textured shadows, authentic craft from Seridó Paraíba" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTRYX86h1pmSaUzfL2VCYbG9CwpiuTQtEJ_nz-_QOVcA63J3kJWKj7S4LD3mML8cRhspjr4Vg55vwyO9GA0Wxm6ykf0LkrryS8BYte6O5lBGhyxJdt8CLid7lSeeflwC-pHY5-QwJTQx5Z3LRl_qZXe3JaC8bTLw4Z_lOt-IGDBmx1l4yQ2VOkPbns0A1LZUUt8ITEnzGcGE5f17h0NYqczft7tl_m5WyR3YaBnAh-eUfYbwtrfT_k-g"/>
+</div>
+<div class="flex-1 flex flex-col justify-between h-full gap-2">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">1x Caminho de Mesa em Renda Labirinto Ponto Palito</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tamanho: 1,40m x 45cm • Tecido: Linho Cru Puro • Fio 100% Algodão Especial</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">+ 2x Toalhinha de Lavabo Mandacaru Rendada</p>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">location_on</span>
+<span>Entrega: <strong>Retirada Comunitária no Ponto Central de Picuí</strong> (Rua Cel. José Pereira)</span>
+</div>
+</div>
+</div>
+<!-- Bottom Action Buttons for Order 1 -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-md border-t-0 bg-surface-container/30 -mx-space-lg -mb-space-lg p-space-md rounded-b-2xl">
+<div class="flex items-center gap-2">
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Chamar no WhatsApp</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Imprimir Etiqueta Afetiva &amp; Selo</span>
+</button>
+</div>
+<button class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-secondary text-on-secondary font-label-lg text-label-lg hover:opacity-95 transition-opacity shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">check</span>
+<span>Marcar como Peça Pronta</span>
+</button>
+</div>
+</div>
+<!-- Order Card 2: Pronto para Despacho / Correios -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+                #FNS-2025-0839
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pronto no ateliê com laço de ráfia</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/60 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+              Aguardando coleta coletiva hoje às 16h
+            </div>
+</div>
+<div class="flex flex-col md:flex-row gap-space-md md:items-center justify-between bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center text-secondary font-headline-sm text-headline-sm font-bold shrink-0">
+                JP
+              </div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-bold">João Paulo Albuquerque</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Campina Grande - PB</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 md:text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Seu Ganho Líquido:</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">R$ 180,00</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-md items-start">
+<div class="w-full sm:w-28 h-28 rounded-xl overflow-hidden shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Traditional set of placemats embroidered in Brazilian Northeast labyrinth needlework placed on a rustic wood surface with dry flowers and dried rosemary sprig, warm afternoon light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEw9oS3FOVsuTsscMj53moK-avNUxswLFp8cD13uQewQWDc5HtjWfbXPhZvsKlzrKlphLPFnnuInlBywLYdhlPklMvD2I7TKeZzYdCqpKroavz-nbzlZbdZnBLbuT6GnM1OrOxAzziuMSSxEPbpKe_Vf6sXKvaudeXH3afZONNT5vzo_48Zih1XpmV_GMSssY5_DYLP6j-Dt42_DkFtrwf6CXVtKWqiuImc7sX3hD-xc8BqEkt3yfsVw"/>
+</div>
+<div class="flex-1 flex flex-col justify-between h-full gap-2">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">1x Jogo Americano 4 Peças em Renda Labirinto</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cor: Linho Branco Alvejado • Acompanha sachê de alecrim da caatinga e bilhete feito à mão</p>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">local_shipping</span>
+<span>Modalidade: <strong>Envio Correios (Sedex Regional)</strong> • Etiqueta Comunitária gerada</span>
+</div>
+</div>
+</div>
+<!-- Bottom Action Buttons for Order 2 -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-md bg-surface-container/30 -mx-space-lg -mb-space-lg p-space-md rounded-b-2xl">
+<div class="flex items-center gap-2">
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+<span>Ver Comprovante de Postagem</span>
+</button>
+</div>
+<button class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+<span>Confirmar Entrega ao Ponto Picuí</span>
+</button>
+</div>
+</div>
+<!-- Order Card 3: Produção Longa -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+                #FNS-2025-0828
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Encomenda Sob Medida</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">alarm</span>
+              Faltam 4 dias úteis • Prazo: 22 de Outubro
+            </div>
+</div>
+<div class="flex flex-col md:flex-row gap-space-md md:items-center justify-between bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-tertiary/10 flex items-center justify-center text-tertiary font-headline-sm text-headline-sm font-bold shrink-0">
+                CM
+              </div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-bold">Clara Mendes</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">João Pessoa - PB</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 md:text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Seu Ganho Líquido:</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">R$ 380,00</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-md items-start">
+<div class="w-full sm:w-28 h-28 rounded-xl overflow-hidden shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Artisan hands weaving fine intricate threads on a wooden embroidery hoop in a sunlit craft workshop with warm terracotta walls, creating heirloom linen table runners" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYNFmCiD2X79Kjkq11yl5tRE8HIHe5ShG325DCQZ9fK9OFXFYF62TCxg425ZmLeEMArVolWrwS0UVhfk0VChAokesaJzGDXFJ2TM_J56lR6whRh8c4dDSAT9CMpsjvMzaiG48ThMiFGWew-NDRq_Zqe26NimzE4GYqttQa4migjIC5DwVq2ddK_kojawbrdErT0fHmor_SXmMBAhjzIBfkA8fkWNenbrxfjP4gEvbvuTVfIQkbbiUcZA"/>
+</div>
+<div class="flex-1 flex flex-col justify-between h-full gap-2">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Caminho de Mesa Nobre 2,20m Sob Medida Especial</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Status da peça: Em acabamento de bainha aberta e crivo de canto</p>
+</div>
+<!-- Progress Bar -->
+<div class="flex flex-col gap-1 w-full max-w-md pt-1">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Progresso da confecção</span>
+<span class="font-bold text-primary">75% concluído</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container">
+<div class="h-2 rounded-full bg-primary" style="width: 75%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-end gap-space-sm pt-space-md bg-surface-container/30 -mx-space-lg -mb-space-lg p-space-md rounded-b-2xl">
+<button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+<span>Enviar Foto do Trabalho em Andamento</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right 4 Cols: Community Logistic Point & Transparent Pix Ledger -->
+<div class="lg:col-span-4 flex flex-col gap-space-xl">
+<!-- Community Hub in Picuí -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-xl bg-secondary-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">store</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider block">Rede Solidária</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Ponto de Apoio Central</h3>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Espaço das Rendeiras e Artesãos de Picuí na <strong>Rua Cel. José Pereira, Centro</strong>. Traga suas peças embaladas ou venha buscar fios e etiquetas.
+          </p>
+<!-- Status bullets -->
+<div class="flex flex-col gap-2.5 pt-space-xs">
+<div class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">airport_shuttle</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">Próxima Rota Correios</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hoje pontualmente às <strong>16h30</strong></span>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">inventory_2</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">Retiradas Locais no Balcão</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2 pacotes de Dona Zefinha guardados com carinho</span>
+</div>
+</div>
+</div>
+<!-- Contact Coordinator -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-secondary-container/40">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-label-sm">
+                M
+              </div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Mariana (Articuladora)</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Plantão hoje até as 18h</span>
+</div>
+</div>
+<a class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-secondary font-label-sm text-label-sm font-bold hover:shadow-sm transition-all flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[15px]">chat</span>
+              WhatsApp
+            </a>
+</div>
+</div>
+<!-- Transparent Pix Payout History -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">account_balance_wallet</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Últimos Repasses Pix</h3>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">100% Direto</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Valores depositados diretamente na sua chave Pix, sem intermediários e com recibo digital registrado.
+          </p>
+<!-- List of Transferred amounts -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Caminho de Mesa + Toalhas</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Ontem • Ref. Pedido #0821</span>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-[16px] text-secondary font-bold block">+ R$ 320,00</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase">Recebido</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Kit Renda de Labirinto (3 un.)</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">12 de Outubro • Ref. Pedido #0810</span>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-[16px] text-secondary font-bold block">+ R$ 450,00</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase">Recebido</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Toalha de Banho Rendada Flor de Mandacaru</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">08 de Outubro • Ref. Pedido #0798</span>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-[16px] text-secondary font-bold block">+ R$ 190,00</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase">Recebido</span>
+</div>
+</div>
+</div>
+<!-- Total transparent fee statement -->
+<div class="p-space-sm rounded-xl bg-surface-container text-center">
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[13px]">
+              Taxa da plataforma Feito no Seridó: <strong>0% na fatia da artesã</strong> mantida pela cooperativa.
+            </span>
+</div>
+</div>
+<!-- Helpful Warm Card / Ateliê Tip -->
+<div class="bg-primary/5 p-space-md rounded-2xl flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[24px] shrink-0 mt-0.5">tips_and_updates</span>
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-primary font-bold">Dica da Mestra</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[13px]">
+              O raminho de alfazema ou alecrim dentro do pacote tem gerado comentários de clientes comovidos em São Paulo e Brasília. Continue enviando esse carinho!
+            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

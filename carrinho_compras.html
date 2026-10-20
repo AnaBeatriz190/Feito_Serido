@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Feito no Seridó - Comércio Regional</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-bright": "#fff8f6",
+          "surface-container": "#f7ebe8",
+          "on-primary-container": "#fffbff",
+          "surface-container-high": "#f2e6e2",
+          "secondary-fixed-dim": "#abd0a3",
+          "primary-fixed-dim": "#ffb59c",
+          "inverse-on-surface": "#faeeeb",
+          "on-error": "#ffffff",
+          "on-secondary-container": "#4b6d46",
+          "error-container": "#ffdad6",
+          "on-primary": "#ffffff",
+          "outline-variant": "#dec0b7",
+          "surface-variant": "#ece0dd",
+          "outline": "#8a726a",
+          "on-surface": "#201a18",
+          "on-background": "#201a18",
+          "on-tertiary": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "surface": "#fff8f6",
+          "on-tertiary-fixed-variant": "#633f00",
+          "on-secondary": "#ffffff",
+          "on-primary-fixed-variant": "#822801",
+          "primary-container": "#bf542c",
+          "on-secondary-fixed-variant": "#2e4e2b",
+          "tertiary-container": "#9f6a0b",
+          "error": "#ba1a1a",
+          "on-surface-variant": "#57423b",
+          "background": "#fff8f6",
+          "on-secondary-fixed": "#032104",
+          "surface-dim": "#e3d8d4",
+          "on-tertiary-container": "#fffbff",
+          "secondary-container": "#c7edbd",
+          "on-tertiary-fixed": "#291800",
+          "secondary": "#466641",
+          "inverse-surface": "#352f2d",
+          "primary-fixed": "#ffdbcf",
+          "surface-container-highest": "#ece0dd",
+          "on-error-container": "#93000a",
+          "surface-tint": "#a23e18",
+          "tertiary-fixed-dim": "#fcba5b",
+          "secondary-fixed": "#c7edbd",
+          "inverse-primary": "#ffb59c",
+          "primary": "#9f3c16",
+          "tertiary": "#7f5300",
+          "on-primary-fixed": "#390c00",
+          "surface-container-low": "#fdf1ed",
+          "tertiary-fixed": "#ffddb4"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin-desktop": "3rem",
+          "margin": "1rem",
+          "space-md": "1rem",
+          "space-xs": "0.25rem",
+          "gutter": "1rem",
+          "space-lg": "1.5rem",
+          "space-sm": "0.5rem",
+          "margin-tablet": "2rem",
+          "space-xl": "2.5rem",
+          "gutter-desktop": "1.5rem"
+        },
+        "fontFamily": {
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "display-lg": [
+            "Playfair Display"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg-mobile": [
+            "Playfair Display"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ]
+        },
+        "fontSize": {
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-sm": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "26px",
+            {
+              "lineHeight": "34px",
+              "letterSpacing": "0",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg": [
+            "48px",
+            {
+              "lineHeight": "56px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_2px_12px_rgba(32,26,24,0.05)]"><div class="bg-primary text-on-primary py-2 px-margin lg:px-margin-desktop"><div class="max-w-[1200px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-1 text-center sm:text-left"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">local_shipping</span><span class="font-label-sm text-label-sm">Apoie os produtores locais de Picuí e Seridó Oriental Paraibano | Entrega rápida e retirada combinada</span></div><a class="font-label-sm text-label-sm underline font-bold hover:text-primary-fixed transition-colors" data-path="cadastro-artesao" href="#">Cadastre sua loja artesanal</a></div></div><div class="h-20 max-w-[1200px] mx-auto px-margin lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-3 shrink-0"><img alt="Feito no Seridó Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UpOLnYeCV5tFQw4WoaF16XFaKh3DSoiob6OYjmUie3YoOOTLYl1ntFFpeuzV8wBt8pttb9x62g2mj6vpnp51vlJEuP4kAHgkz8aljHNTn--EAq_KOde3md_uBPeCtdWONTaYiuNI88Vs5ZMGE7tY9-yZTJFbc0HPRcXKscIl2OFOfBomnB6LryTQ0gjjzDxSv8Aayz81zzwpo_ZmREwaxsXD84gcMAnSVoWooDha_ZaFUtGnou53vxrgqt"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-none">Feito no Seridó</span><span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Picuí &amp; Região</span></div></div><div class="hidden md:flex flex-1 max-w-md mx-space-md"><div class="relative w-full flex items-center"><input class="w-full h-10 pl-4 pr-10 rounded-full bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm outline-none focus:bg-surface-container-lowest transition-all shadow-[inset_0_1px_2px_rgba(0,0,0,0.03)]" placeholder="Buscar renda de labirinto, cerâmica, carne de sol, queijos..." type="text"/><button aria-label="Buscar" class="absolute right-1 top-1 bottom-1 w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary hover:bg-primary-container transition-colors"><span class="material-symbols-outlined text-[18px]">search</span></button></div></div><div class="flex items-center gap-space-sm sm:gap-space-md shrink-0"><div class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md"><span class="material-symbols-outlined text-[16px]">location_on</span><span>Picuí - PB</span></div><a aria-label="Favoritos" class="relative p-2 text-on-surface-variant hover:text-primary transition-colors" data-path="favoritos" href="#"><span class="material-symbols-outlined text-[24px]">favorite</span><span class="absolute top-1 right-1 w-4 h-4 bg-tertiary text-on-tertiary font-label-sm text-[10px] rounded-full flex items-center justify-center">0</span></a><a aria-label="Sacola de Compras" class="relative p-2 text-on-surface-variant hover:text-primary transition-colors" data-path="carrinho" href="#"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="absolute top-1 right-1 w-4 h-4 bg-primary text-on-primary font-label-sm text-[10px] rounded-full flex items-center justify-center">2</span></a><div class="flex items-center gap-2 pl-2"><a class="hidden sm:flex flex-col text-right" data-path="minha-conta" href="#"><span class="font-label-sm text-label-sm text-outline">Olá, Visitante</span><span class="font-label-md text-label-md text-on-surface font-semibold">Minha Conta</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div><div class="bg-surface-container-low"><div class="max-w-[1200px] mx-auto px-margin lg:px-margin-desktop flex items-center justify-between"><nav class="flex items-center gap-1 sm:gap-2 overflow-x-auto py-1" data-active-classes="text-primary font-bold bg-surface-container"><a class="font-label-lg text-label-lg text-on-surface-variant px-3 py-2 rounded-lg transition-colors hover:text-on-surface whitespace-nowrap" data-path="inicio" href="#">Início</a><a class="font-label-lg text-label-lg text-on-surface-variant px-3 py-2 rounded-lg transition-colors hover:text-on-surface whitespace-nowrap" data-path="produtos" href="#">Explorar Produtos</a><a class="font-label-lg text-label-lg text-on-surface-variant px-3 py-2 rounded-lg transition-colors hover:text-on-surface whitespace-nowrap" data-path="artesas-e-produtores" href="#">Artesãs &amp; Produtores</a><a class="font-label-lg text-label-lg text-on-surface-variant px-3 py-2 rounded-lg transition-colors hover:text-on-surface whitespace-nowrap" data-path="sabores-do-serido" href="#">Sabores do Seridó</a><a class="font-label-lg text-label-lg text-on-surface-variant px-3 py-2 rounded-lg transition-colors hover:text-on-surface whitespace-nowrap" data-path="sobre-o-projeto" href="#">Sobre o Projeto</a></nav><div class="hidden lg:flex items-center gap-1 text-secondary font-label-sm text-label-sm py-1"><span class="material-symbols-outlined text-[16px]">verified</span><span>Certificação de Origem Seridó</span></div></div></div></header><main class="w-full pt-36 bg-surface min-h-[calc(100vh-28rem)]"><div class="flex flex-col w-full">
+<!-- TOPO: TRILHA DE NAVEGAÇÃO & ETAPAS -->
+<section class="w-full bg-surface-container-low/70 py-space-md">
+<div class="max-w-[1200px] mx-auto px-margin lg:px-margin-desktop flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<!-- Breadcrumb -->
+<nav aria-label="Navegação Estrutural" class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<a class="hover:text-primary transition-colors flex items-center gap-1" data-path="inicio" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+          Início
+        </a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-primary font-semibold">Meu Carrinho</span>
+</nav>
+<!-- Indicador de Etapas do Pedido -->
+<div class="flex items-center gap-2 sm:gap-4 overflow-x-auto pb-1 md:pb-0">
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-[12px]">1</span>
+<span class="font-bold tracking-tight whitespace-nowrap">Carrinho</span>
+</div>
+<div class="w-6 h-[2px] bg-outline-variant"></div>
+<div class="flex items-center gap-2 text-outline font-label-md text-label-md opacity-70">
+<span class="w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-medium text-[12px]">2</span>
+<span class="whitespace-nowrap">Identificação &amp; Entrega</span>
+</div>
+<div class="w-6 h-[2px] bg-outline-variant"></div>
+<div class="flex items-center gap-2 text-outline font-label-md text-label-md opacity-70">
+<span class="w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-medium text-[12px]">3</span>
+<span class="whitespace-nowrap">Pagamento</span>
+</div>
+<div class="w-6 h-[2px] bg-outline-variant"></div>
+<div class="flex items-center gap-2 text-outline font-label-md text-label-md opacity-70">
+<span class="w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-medium text-[12px]">4</span>
+<span class="whitespace-nowrap">Confirmação</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CABEÇALHO DO CARRINHO COM EDITORIAL SERIDOENSE -->
+<section class="w-full py-space-lg">
+<div class="max-w-[1200px] mx-auto px-margin lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-md">
+<div>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm mb-2">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+            Comércio Justo Direto de Origem
+          </span>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Meu Carrinho de Compras</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+            Seus pedidos apoiam diretamente os pequenos produtores e mestras artesãs de Picuí e do Seridó Oriental Paraibano.
+          </p>
+</div>
+<!-- Controles Rápidos -->
+<div class="flex items-center gap-2 self-start md:self-auto">
+<button class="px-3 py-2 rounded-lg bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors font-label-sm text-label-sm flex items-center gap-1.5 shadow-sm" id="btn-simulate-empty" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility_off</span>
+            Simular Carrinho Vazio
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- CORPO PRINCIPAL DO CARRINHO (GRID RESPONSIVO) -->
+<main class="w-full pb-space-xl" id="cart-content-view">
+<div class="max-w-[1200px] mx-auto px-margin lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- COLUNA ESQUERDA: LISTAGEM DE ITENS AGRUPADOS POR ARTESÃO/PRODUTOR (JINJA READY) -->
+<div class="lg:col-span-8 space-y-space-lg">
+<!-- BANNER COMUNITÁRIO INFORMATIVO -->
+<div class="p-4 rounded-xl bg-surface-container-low flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+</div>
+<div class="min-w-0 flex-1">
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold">Envio Múltiplo por Polo Criativo</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cada mestre envia a partir do seu atelier ou roçado. Você pode optar por retirada gratuita conjunta em Picuí ou entregas locais combinadas.</p>
+</div>
+</div>
+<!-- PRODUCER GROUP: DONA ZEFINHA RENDEIRA -->
+<div class="producer-card rounded-2xl bg-surface-container-lowest shadow-sm overflow-hidden" data-producer="zefinha">
+<!-- Cabeçalho do Produtor -->
+<div class="p-space-md sm:p-space-lg bg-surface-container-low/70 flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-primary-fixed shrink-0">
+<img class="w-full h-full object-cover" data-alt="Close-up portrait of Dona Zefinha, a serene elderly Brazilian lace maker from Picuí with warm sun-dappled skin, artisan cotton apron, and genuine hospitable smile inside her rustic whitewashed workshop in Paraiba Serido region." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg4glj9wsvChVvMj8uxFLFPCWxQCh586C3nn3YLgbjqxBiKAggyudYtghdcjAQB4Yk3y_dboHr0yZ1u3JHL4hkyABQQcmHmJyTbllzC3zmu9dFkUQWzQ252hb1fRN8UJgUgo_6-yp3t0gcGrynzjY4mPlfaSSOr4Y-rRzm9zvYRnO2DFQnFjZsTOM6ObFfBVRhcI_b-B6Pi4r2uF71BGev7yvtMh_mRG75vc3qmMCt27hlKVqAyRussg"/>
+</div>
+<div>
+<div class="flex items-center gap-2 flex-wrap">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Loja Dona Zefinha Rendeira</h3>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+                      Mestra Rendeira Certificada
+                    </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">location_on</span>
+                    Picuí - PB • Bairro Limeira (Selo de Origem #042)
+                  </p>
+</div>
+</div>
+<a class="text-secondary font-label-md text-label-md hover:underline flex items-center gap-1 shrink-0" data-path="artesas-e-produtores" href="#">
+                Ver atelier completo
+                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Itens do Produtor Zefinha -->
+<div class="p-space-md sm:p-space-lg space-y-space-md">
+<!-- CART ITEM 1: CAMINHO DE MESA -->
+<div class="cart-item flex flex-col sm:flex-row gap-space-md p-space-sm sm:p-space-md rounded-xl hover:bg-surface-container-low/40 transition-colors" data-id="item-renda-1" data-price="145.00">
+<div class="w-full sm:w-28 h-28 sm:h-28 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Traditional Brazilian needle lace table runner made in Serido Paraiba, intricately handcrafted off-white linen texture with delicate openwork motifs and needlepoint borders over natural rustic wood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKwPjNtN1eXLdL8RDkF5w_vLwQaXlbDOikB5lo_OlYCgzcHP25qd-KNrIYR1op4R8mOoQkI4JPPj4Lg8rIv1AzGgMrHcwSpgQ1lfQlfleuzgP0P_cawUB66blX2_btYHxiTe-i-zTjos7vMTkSCMoq-JlZ0E7Vi3BncnKsr3EK_-Nzmz9xBh-lyV-XnQqyyFMN0oobAZSB61HfC5m61Hk2IHtf4DpDXzf4r58vIBEorKa11eX1UyLD4Q"/>
+</div>
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-2">
+<div>
+<span class="inline-block px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[10px] uppercase font-bold tracking-wider mb-1">Pronta entrega em Picuí</span>
+<h4 class="font-headline-sm text-[17px] text-on-surface font-semibold leading-snug">Caminho de Mesa em Renda Labirinto Ponto Palito</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Variação: 1,40m × 45cm | Linho Cru Natural 100% Algodão</p>
+</div>
+<div class="text-left sm:text-right shrink-0">
+<div class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight item-total-display">R$ 145,00</div>
+<span class="font-label-sm text-label-sm text-outline">R$ 145,00 un.</span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-4 pt-3 mt-2">
+<!-- Seletor de Quantidade -->
+<div class="flex items-center bg-surface-container-low rounded-lg p-1">
+<button aria-label="Diminuir quantidade" class="qty-btn-minus w-8 h-8 rounded-md bg-surface-container-lowest hover:bg-surface-container flex items-center justify-center text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<input class="qty-input w-10 text-center font-label-lg text-label-lg bg-transparent text-on-surface font-semibold outline-none" max="10" min="1" readonly="" type="number" value="1"/>
+<button aria-label="Aumentar quantidade" class="qty-btn-plus w-8 h-8 rounded-md bg-surface-container-lowest hover:bg-surface-container flex items-center justify-center text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<button class="btn-remove-item text-outline hover:text-error transition-colors flex items-center gap-1 font-label-sm text-label-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+<span class="hidden sm:inline">Remover</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CART ITEM 2: TOALHA DE LAVABO -->
+<div class="cart-item flex flex-col sm:flex-row gap-space-md p-space-sm sm:p-space-md rounded-xl hover:bg-surface-container-low/40 transition-colors" data-id="item-renda-2" data-price="35.00">
+<div class="w-full sm:w-28 h-28 sm:h-28 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Refined hand-embroidered white guest towel showcasing delicate caatinga mandacaru cactus flowers, clean linen stitches crafted in Serido region Paraiba Brazil." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYefl7jujAuclka4F3vBS74j89HmaZbNYHHLYgnfV0c2R5zFrvq0OHq1bmvfTHBex8aJ5ezUpFNGDM-SHA9K_soHxMCs-QVQstZlQjzpJP1SZ2VuncrTNXgef2thy3ZRC1y2EX6yaBsC-AygsDh-Iw3RaY5PlE1BkIDeMXSCulqGIidVcR8-Apw0NYsMPeT-dvhVSxrcnIECX6WW88CywJo8C_2JIM4GJLoDQLGo4PRmiX7fewKcrybw"/>
+</div>
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-2">
+<div>
+<span class="inline-block px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[10px] uppercase font-bold tracking-wider mb-1">Artesanato Exclusivo</span>
+<h4 class="font-headline-sm text-[17px] text-on-surface font-semibold leading-snug">Toalha de Lavabo Bordada Flor de Mandacaru</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Variação: Padrão Branco com Ponto Cheio Verde e Terracota</p>
+</div>
+<div class="text-left sm:text-right shrink-0">
+<div class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight item-total-display">R$ 70,00</div>
+<span class="font-label-sm text-label-sm text-outline">R$ 35,00 un.</span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-4 pt-3 mt-2">
+<!-- Seletor de Quantidade -->
+<div class="flex items-center bg-surface-container-low rounded-lg p-1">
+<button aria-label="Diminuir quantidade" class="qty-btn-minus w-8 h-8 rounded-md bg-surface-container-lowest hover:bg-surface-container flex items-center justify-center text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<input class="qty-input w-10 text-center font-label-lg text-label-lg bg-transparent text-on-surface font-semibold outline-none" max="10" min="1" readonly="" type="number" value="2"/>
+<button aria-label="Aumentar quantidade" class="qty-btn-plus w-8 h-8 rounded-md bg-surface-container-lowest hover:bg-surface-container flex items-center justify-center text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<button class="btn-remove-item text-outline hover:text-error transition-colors flex items-center gap-1 font-label-sm text-label-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+<span class="hidden sm:inline">Remover</span>
+</button>
+</div>
+</div>
+</div>
+<!-- OPÇÕES DE ENVIO: DONA ZEFINHA -->
+<div class="mt-4 p-space-md rounded-xl bg-surface-container-low/60 space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">local_shipping</span>
+                    Opção de Entrega para os itens de Dona Zefinha:
+                  </span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Saída: Picuí</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+<label class="shipping-option cursor-pointer p-3 rounded-lg bg-surface-container-lowest flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="flex items-start gap-2">
+<input checked="" class="mt-1 accent-primary w-4 h-4" name="shipping-zefinha" type="radio" value="0.00"/>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Retirada Ponto de Apoio</div>
+<div class="font-body-sm text-[12px] text-on-surface-variant leading-tight">Centro de Picuí (Pronto em 24h)</div>
+</div>
+</div>
+<span class="font-label-md text-label-md text-secondary font-bold mt-2 self-end">Grátis</span>
+</label>
+<label class="shipping-option cursor-pointer p-3 rounded-lg bg-surface-container-lowest flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="flex items-start gap-2">
+<input class="mt-1 accent-primary w-4 h-4" name="shipping-zefinha" type="radio" value="8.00"/>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Entrega Regional Seridó</div>
+<div class="font-body-sm text-[12px] text-on-surface-variant leading-tight">1 a 2 dias úteis</div>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-bold mt-2 self-end">R$ 8,00</span>
+</label>
+<label class="shipping-option cursor-pointer p-3 rounded-lg bg-surface-container-lowest flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="flex items-start gap-2">
+<input class="mt-1 accent-primary w-4 h-4" name="shipping-zefinha" type="radio" value="24.90"/>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Nacional Correios/PAC</div>
+<div class="font-body-sm text-[12px] text-on-surface-variant leading-tight">4 a 9 dias úteis</div>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-bold mt-2 self-end">R$ 24,90</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- PRODUCER GROUP: FAZENDA OLHO D'ÁGUA -->
+<div class="producer-card rounded-2xl bg-surface-container-lowest shadow-sm overflow-hidden" data-producer="olhodagua">
+<!-- Cabeçalho do Produtor -->
+<div class="p-space-md sm:p-space-lg bg-surface-container-low/70 flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-secondary-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of a traditional Paraiba cattle rancher and artisanal cheese maker at Fazenda Olho D'Agua Picui, rustic wide-brim straw hat, caatinga farm backdrop with soft morning sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBApMRuAxJ59ZS1t-Nu-_rIqDFeAmfY1oHtyuEBS94844Co0QbXJGQeooc0LWfHyro5RZUCCykcXeoB-01gGxNK9YUC09LndNzmqLDzN_VA3dRirljIRjxWm-vrfhQgXZk0uCqSQtbMqSLbzrYxbMgQXNRi7N12gHOj4ztgR6DS0taFdrs3qSXwKoUdzP5HA_c8y7bZCCoA2JWGo1ax3oAfszkB1pQcfS3kuBmeiC6dzQ_84s2rswTfXw"/>
+</div>
+<div>
+<div class="flex items-center gap-2 flex-wrap">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Fazenda Olho D'Água</h3>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">agriculture</span>
+                      Produtor Rural Familiar
+                    </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">location_on</span>
+                    Sabores do Sertão • Zona Rural, Picuí - PB
+                  </p>
+</div>
+</div>
+<a class="text-secondary font-label-md text-label-md hover:underline flex items-center gap-1 shrink-0" data-path="sabores-do-serido" href="#">
+                Ver laticínios &amp; carnes
+                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Itens Fazenda -->
+<div class="p-space-md sm:p-space-lg space-y-space-md">
+<!-- CART ITEM 3: QUEIJO DE COALHO -->
+<div class="cart-item flex flex-col sm:flex-row gap-space-md p-space-sm sm:p-space-md rounded-xl hover:bg-surface-container-low/40 transition-colors" data-id="item-queijo-1" data-price="42.50">
+<div class="w-full sm:w-28 h-28 sm:h-28 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Artisanal authentic Brazilian Queijo Coalho block from Serido Paraiba, lightly golden cured rind, rested on artisanal wood board with herbs and dry caatinga flowers, gourmet culinary photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdRX8yGIySfCAlTtonEmm775cNeQaHAgC3s50TScvTgkh3_wZzqSPinS9hUUarurdE9Fu57ROB5S7nz5BWedEOtrrTSk7zwdIzfERiciEdCUaesBkgJcp9K7ArkdhABgfPSUP1qkM-dgXULlqce3vWgXTSbPUnF74RfQSrE1rZNdTKzLFpRyuXEgi3n3LinBQ3ss3f8OLTc4QR1KKJzHlMdWA6r4_0KeqWCoj7OTrQPGQEhYUVqJy2YA"/>
+</div>
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-2">
+<div>
+<span class="inline-block px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-[10px] uppercase font-bold tracking-wider mb-1">Fresco &amp; Tradicional</span>
+<h4 class="font-headline-sm text-[17px] text-on-surface font-semibold leading-snug">Queijo de Coalho Curado na Caatinga 800g</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Embalado a vácuo com selo de inspeção municipal e maturação lenta</p>
+</div>
+<div class="text-left sm:text-right shrink-0">
+<div class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight item-total-display">R$ 42,50</div>
+<span class="font-label-sm text-label-sm text-outline">R$ 42,50 un.</span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-4 pt-3 mt-2">
+<div class="flex items-center bg-surface-container-low rounded-lg p-1">
+<button aria-label="Diminuir quantidade" class="qty-btn-minus w-8 h-8 rounded-md bg-surface-container-lowest hover:bg-surface-container flex items-center justify-center text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<input class="qty-input w-10 text-center font-label-lg text-label-lg bg-transparent text-on-surface font-semibold outline-none" max="10" min="1" readonly="" type="number" value="1"/>
+<button aria-label="Aumentar quantidade" class="qty-btn-plus w-8 h-8 rounded-md bg-surface-container-lowest hover:bg-surface-container flex items-center justify-center text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<button class="btn-remove-item text-outline hover:text-error transition-colors flex items-center gap-1 font-label-sm text-label-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+<span class="hidden sm:inline">Remover</span>
+</button>
+</div>
+</div>
+</div>
+<!-- OPÇÕES DE ENVIO: FAZENDA -->
+<div class="mt-4 p-space-md rounded-xl bg-surface-container-low/60 space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">storefront</span>
+                    Opção de Entrega para Fazenda Olho D'Água:
+                  </span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Refrigerado</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+<label class="shipping-option cursor-pointer p-3 rounded-lg bg-surface-container-lowest flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="flex items-start gap-2">
+<input class="mt-1 accent-primary w-4 h-4" name="shipping-olhodagua" type="radio" value="0.00"/>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Retirada Mercado Público de Picuí</div>
+<div class="font-body-sm text-[12px] text-on-surface-variant leading-tight">Box 12 - Quartas e Sábados</div>
+</div>
+</div>
+<span class="font-label-md text-label-md text-secondary font-bold mt-2 self-end">Grátis</span>
+</label>
+<label class="shipping-option cursor-pointer p-3 rounded-lg bg-surface-container-lowest flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="flex items-start gap-2">
+<input checked="" class="mt-1 accent-primary w-4 h-4" name="shipping-olhodagua" type="radio" value="6.00"/>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Entrega Domiciliar em Picuí</div>
+<div class="font-body-sm text-[12px] text-on-surface-variant leading-tight">Macedo Express Térmica (Hoje)</div>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-bold mt-2 self-end">R$ 6,00</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- PRODUCER GROUP: MESTRE SEVERINO OLEIRO -->
+<div class="producer-card rounded-2xl bg-surface-container-lowest shadow-sm overflow-hidden" data-producer="severino">
+<!-- Cabeçalho do Produtor -->
+<div class="p-space-md sm:p-space-lg bg-surface-container-low/70 flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-primary-container/20 shrink-0">
+<img class="w-full h-full object-cover" data-alt="Senior master potter shaping red terracotta clay on a manual pottery wheel, clay smudged hands, peaceful focused expression, sunlit ceramic kiln in Carnauba dos Dantas Serido region." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTLtK5yjCLgIrBlzThp6STLK2F6lfn8eUkMdpdhYlChokM7xMKq-HySRvoF17wLkuXNqTIk4CregppOxPKD9_JluKmYu3MXPl1aQ_HeSkS7AHwa00Fj5d2IbN27AIuisEY6g5kbuZydI9qG73fgsUUxZYrpPftWmX3LxWuspgjEZIKRNa_FhL1BZTvDMbz4Kjh_DP42-KUgrwSSd2DBWH_NMUUmLr173H1F4k8w6aeC8XfRRY9qqimeg"/>
+</div>
+<div>
+<div class="flex items-center gap-2 flex-wrap">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Mestre Severino Oleiro</h3>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">palette</span>
+                      Cerâmica Tradicional
+                    </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">location_on</span>
+                    Carnaúba dos Dantas - PB (Polo Oleiro Seridó)
+                  </p>
+</div>
+</div>
+<a class="text-secondary font-label-md text-label-md hover:underline flex items-center gap-1 shrink-0" data-path="artesas-e-produtores" href="#">
+                Ver olaria
+                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Itens Severino -->
+<div class="p-space-md sm:p-space-lg space-y-space-md">
+<!-- CART ITEM 4: VASO TERRACOTA -->
+<div class="cart-item flex flex-col sm:flex-row gap-space-md p-space-sm sm:p-space-md rounded-xl hover:bg-surface-container-low/40 transition-colors" data-id="item-vaso-1" data-price="92.00">
+<div class="w-full sm:w-28 h-28 sm:h-28 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Sculptural terracotta clay vase with authentic hand-carved Serido geometric patterns, warm reddish earthen clay texture, studio lighting against warm natural background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpU9GaTGoeXpxLuFukJBISbSvnshAwFsI7K-Ykm765DQpU2sF91GKkyCFFSBgUjXYeho7-VaRdMNTg2-zIwDlSINTXQb3TF7Tf5tWv6oJyd7U3F8PAjgtt12s7U77LU1CLn4yvUEh5JxkZW21231xrBi_8oE4ZnedqGYnFMIqVmOY7y1xbZxa0njeEeORuT4H2rjFNEAKhUBi0VTEL41Iq-OkNVzj1YzNDa4zHcw5DgAtnkc_PAFmFMA"/>
+</div>
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-2">
+<div>
+<span class="inline-block px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[10px] uppercase font-bold tracking-wider mb-1">Embalagem anti-impacto inclusa</span>
+<h4 class="font-headline-sm text-[17px] text-on-surface font-semibold leading-snug">Vaso Terracota com Entalhe Seridoense</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Altura 22cm • Queima em forno à lenha sustentável • Peça única assinada</p>
+</div>
+<div class="text-left sm:text-right shrink-0">
+<div class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight item-total-display">R$ 92,00</div>
+<span class="font-label-sm text-label-sm text-outline">R$ 92,00 un.</span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-4 pt-3 mt-2">
+<div class="flex items-center bg-surface-container-low rounded-lg p-1">
+<button aria-label="Diminuir quantidade" class="qty-btn-minus w-8 h-8 rounded-md bg-surface-container-lowest hover:bg-surface-container flex items-center justify-center text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<input class="qty-input w-10 text-center font-label-lg text-label-lg bg-transparent text-on-surface font-semibold outline-none" max="10" min="1" readonly="" type="number" value="1"/>
+<button aria-label="Aumentar quantidade" class="qty-btn-plus w-8 h-8 rounded-md bg-surface-container-lowest hover:bg-surface-container flex items-center justify-center text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<button class="btn-remove-item text-outline hover:text-error transition-colors flex items-center gap-1 font-label-sm text-label-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+<span class="hidden sm:inline">Remover</span>
+</button>
+</div>
+</div>
+</div>
+<!-- OPÇÕES DE ENVIO: SEVERINO -->
+<div class="mt-4 p-space-md rounded-xl bg-surface-container-low/60 space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">local_shipping</span>
+                    Opção de Entrega para Mestre Severino:
+                  </span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Saída: Carnaúba</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+<label class="shipping-option cursor-pointer p-3 rounded-lg bg-surface-container-lowest flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="flex items-start gap-2">
+<input checked="" class="mt-1 accent-primary w-4 h-4" name="shipping-severino" type="radio" value="0.00"/>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Retirada no Atelier em Carnaúba</div>
+<div class="font-body-sm text-[12px] text-on-surface-variant leading-tight">Rua das Olarias, 88</div>
+</div>
+</div>
+<span class="font-label-md text-label-md text-secondary font-bold mt-2 self-end">Grátis</span>
+</label>
+<label class="shipping-option cursor-pointer p-3 rounded-lg bg-surface-container-lowest flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="flex items-start gap-2">
+<input class="mt-1 accent-primary w-4 h-4" name="shipping-severino" type="radio" value="12.00"/>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Rota Regional Carnaúba &gt; Picuí</div>
+<div class="font-body-sm text-[12px] text-on-surface-variant leading-tight">Transporte com proteção acolchoada</div>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-bold mt-2 self-end">R$ 12,00</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- AÇÕES SECUNDÁRIAS NA LISTAGEM -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-sm">
+<a class="w-full sm:w-auto px-6 py-3 rounded-xl bg-surface-container-lowest text-primary hover:bg-surface-container font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 shadow-sm transition-all" data-path="produtos" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+              Continuar Comprando Produtos da Região
+            </a>
+<button class="text-outline hover:text-error font-label-md text-label-md flex items-center gap-1.5 transition-colors" id="btn-clear-cart" type="button">
+<span class="material-symbols-outlined text-[16px]">remove_shopping_cart</span>
+              Limpar todo o carrinho
+            </button>
+</div>
+</div>
+<!-- COLUNA DIREITA: RESUMO DO PEDIDO STICKY (ORDER SUMMARY) -->
+<div class="lg:col-span-4 lg:sticky lg:top-40 space-y-space-md">
+<!-- CARD DE RESUMO -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-md sm:p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between pb-2 border-b border-surface-container">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Resumo do Pedido</h2>
+<span class="text-outline font-label-sm text-label-sm" id="summary-items-count">4 itens</span>
+</div>
+<!-- Detalhamento de Valores -->
+<div class="space-y-3 font-body-sm text-body-sm">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>Subtotal dos Produtos</span>
+<span class="font-semibold text-on-surface" id="summary-subtotal">R$ 349,50</span>
+</div>
+<div class="flex justify-between items-center text-secondary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">qr_code_2</span>
+                  Desconto no Pix (5%)
+                </span>
+<span class="font-semibold" id="summary-discount">- R$ 17,48</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span>Logística Regional Seridó</span>
+<span class="material-symbols-outlined text-[14px] text-outline cursor-help" title="Soma das opções de envio e retiradas selecionadas para cada produtor">help_outline</span>
+</span>
+<span class="font-semibold text-on-surface" id="summary-shipping">R$ 6,00</span>
+</div>
+<div class="text-[12px] text-outline bg-surface-container-low p-2 rounded-lg leading-snug">
+                Retiradas gratuitas em Picuí e Carnaúba + 1 entrega local (Macedo Express).
+              </div>
+</div>
+<!-- Cupom de Desconto -->
+<div class="pt-2">
+<label class="block font-label-sm text-label-sm font-semibold text-on-surface mb-1.5">Cupom de Incentivo Local</label>
+<div class="flex gap-2">
+<input class="flex-1 uppercase h-10 px-3 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm outline-none focus:bg-surface-container-lowest transition-all" id="coupon-input" placeholder="Ex: BEMVINDO10" type="text"/>
+<button class="px-4 h-10 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md font-semibold transition-colors" id="btn-apply-coupon" type="button">
+                  Aplicar
+                </button>
+</div>
+<div class="hidden text-[12px] text-secondary font-medium mt-1.5 flex items-center gap-1" id="coupon-alert">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Cupom regional de boas-vindas aplicado!</span>
+</div>
+</div>
+<!-- Divisor e Total Geral -->
+<div class="pt-3 border-t border-surface-container space-y-2">
+<div class="flex justify-between items-baseline">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Total no Pix</span>
+<span class="font-headline-lg text-headline-lg text-primary font-bold" id="summary-total-pix">R$ 338,02</span>
+</div>
+<p class="font-body-sm text-[13px] text-on-surface-variant text-right">
+                ou <strong class="text-on-surface" id="summary-total-card">R$ 355,50</strong> em até <span class="font-semibold">3x de R$ 118,50</span> sem juros no cartão
+              </p>
+</div>
+<!-- Botão de Ação Primária em Terracota -->
+<button class="w-full py-4 px-6 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-md transition-all" id="btn-checkout" type="button">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+              Prosseguir para Checkout Seguro
+            </button>
+<!-- Selos de Confiança e Transparência Local -->
+<div class="space-y-2.5 pt-2 text-[12px] text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span>Pagamento 100% blindado com repasse imediato</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">published_with_changes</span>
+<span>Garantia de autenticidade ou troca em 7 dias</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">forum</span>
+<span>Atendimento humanizado com articulador de Picuí</span>
+</div>
+</div>
+</div>
+<!-- CARD DE COMÉRCIO JUSTO E IMPACTO COLETIVO -->
+<div class="p-space-md rounded-2xl bg-secondary-container/40 space-y-2">
+<div class="flex items-center gap-2 text-secondary font-headline-sm text-[16px] font-bold">
+<span class="material-symbols-outlined text-[20px]">handshake</span>
+              Economia Solidária do Seridó
+            </div>
+<p class="font-body-sm text-[13px] text-on-secondary-fixed-variant leading-relaxed">
+              100% do valor dos produtos é repassado sem taxas abusivas de intermediação para as mestras rendeiras, oleiros e agricultores da agricultura familiar do Seridó Paraibano.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- ESTADO VAZIO: SIMULAÇÃO / DEMONSTRAÇÃO (CONTROLADO VIA JAVASCRIPT) -->
+<section class="hidden w-full py-space-xl" id="cart-empty-view">
+<div class="max-w-[700px] mx-auto px-margin text-center space-y-space-md">
+<div class="w-24 h-24 mx-auto rounded-full bg-surface-container flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[48px]">shopping_basket</span>
+</div>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Sua sacola de compras está vazia</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2 max-w-lg mx-auto">
+          As rendas de labirinto de Picuí, os queijos de leite cru e a cerâmica de barro do Seridó estão à sua espera. Apoie nossos artesãos!
+        </p>
+</div>
+<div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
+<a class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold shadow-md transition-all" data-path="produtos" href="#">
+          Explorar Produtos Regionais
+        </a>
+<button class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high font-label-lg text-label-lg font-semibold transition-all" id="btn-restore-cart" type="button">
+          Restaurar Itens do Exemplo
+        </button>
+</div>
+<!-- Sugestões Populares do Seridó -->
+<div class="pt-space-lg text-left">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Destaques da Nossa Terra</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<a class="p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors flex items-center gap-3 shadow-sm" data-path="sabores-do-serido" href="#">
+<div class="w-12 h-12 rounded-lg bg-surface-container overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Traditional Picui sun-dried beef (carne de sol de Picui), artisanal cut cured in the arid sunlit breeze of Serido Paraiba." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNpjdEiD26cfdb7Wjsz1F81hMc7LFCDw2uRSMRr1LP0XrOeuoAjs-A-GxwxBOxna2w-QIGZS54Iw4oszcdEzfbxZsvFlFuEaWyCWX1ytHqPDjtw6UhXegzh5afo5by2bx2Q75h_nsVnQ-QFnP5eLGa7Bioge5eYzXJen7gI2P3NOepmD1MAJbrYK9OujIS4kV9TqKacYgIPa_TMZUKofU1Xr1pOuPZxO_3u4tmntCE1PiOVBPpdRFXMA"/>
+</div>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Carne de Sol Tradicional de Picuí</div>
+<div class="font-label-sm text-label-sm text-secondary">A partir de R$ 68,00 / kg</div>
+</div>
+</a>
+<a class="p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors flex items-center gap-3 shadow-sm" data-path="categoria-rendas" href="#">
+<div class="w-12 h-12 rounded-lg bg-surface-container overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Delicate handmade Brazilian labyrinth lace bookmark with floral tassels from Paraiba artisans." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiradBwY-vSZHRosHmlkBGfNNKoFHHDQsUBnlZXwkvhlU81FKIYh_TRit6JqDz8HwTtvrBWOnG6--KKSX1YkWahn6p2l2ilTtv2knRYirJOvR1jszIgMiuDhKPsvw5n8Z4iTw5qjNc_HtMLL69HoZQGjQ40dfuLATkBSN1KPkqdIRPDV0naWun7aOuLQf8Xb8HbQOzY7wl0CG6yGGj0hq9UFUvQdjKwD-2ZtajNYgZh-Akjvg7qnA9LA"/>
+</div>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Marcador em Renda de Labirinto</div>
+<div class="font-label-sm text-label-sm text-secondary">A partir de R$ 22,00</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- MODAL DE FEEDBACK DE CHECKOUT (MOCK INLINE) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden flex items-center justify-center p-4" id="checkout-modal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-md w-full p-space-lg shadow-xl space-y-space-md text-center transform transition-all">
+<div class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container mx-auto flex items-center justify-center">
+<span class="material-symbols-outlined text-[32px]">check</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Indo para Entrega &amp; Pagamento</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Seus dados e as opções de retirada de cada produtor serão conferidos na etapa 2.
+        </p>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low text-left space-y-1 font-body-sm text-body-sm">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Total selecionado:</span>
+<span class="font-bold text-primary" id="modal-total">R$ 338,02</span>
+</div>
+<div class="flex justify-between text-secondary">
+<span>Origem:</span>
+<span>Picuí &amp; Carnaúba dos Dantas</span>
+</div>
+</div>
+<div class="flex gap-2">
+<button class="w-full py-3 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-bold transition-all" id="modal-close" type="button">
+          Continuar com Identificação
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // FUNÇÕES DE CÁLCULO E INTERATIVIDADE DO CARRINHO
+    const cartContentView = document.getElementById('cart-content-view');
+    const cartEmptyView = document.getElementById('cart-empty-view');
+    const btnSimulateEmpty = document.getElementById('btn-simulate-empty');
+    const btnRestoreCart = document.getElementById('btn-restore-cart');
+    const btnClearCart = document.getElementById('btn-clear-cart');
+    const btnCheckout = document.getElementById('btn-checkout');
+    const checkoutModal = document.getElementById('checkout-modal');
+    const modalClose = document.getElementById('modal-close');
+    const btnApplyCoupon = document.getElementById('btn-apply-coupon');
+    const couponInput = document.getElementById('coupon-input');
+    const couponAlert = document.getElementById('coupon-alert');
+
+    // Formatação de moeda BRL
+    function formatBRL(value) {
+      return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    }
+
+    // Recalcular totais gerais do carrinho
+    function recalculateCart() {
+      const items = document.querySelectorAll('.cart-item');
+      let subtotal = 0;
+      let totalItemsCount = 0;
+
+      items.forEach(item => {
+        const price = parseFloat(item.getAttribute('data-price') || 0);
+        const qty = parseInt(item.querySelector('.qty-input').value || 1, 10);
+        const itemTotal = price * qty;
+        subtotal += itemTotal;
+        totalItemsCount += qty;
+
+        const display = item.querySelector('.item-total-display');
+        if (display) {
+          display.textContent = formatBRL(itemTotal);
+        }
+      });
+
+      // Cálculo dos fretes selecionados
+      let shippingTotal = 0;
+      const checkedRadios = document.querySelectorAll('input[type="radio"][name^="shipping-"]:checked');
+      checkedRadios.forEach(radio => {
+        shippingTotal += parseFloat(radio.value || 0);
+      });
+
+      // Desconto de 5% Pix
+      const pixDiscount = subtotal * 0.05;
+      const totalPix = (subtotal - pixDiscount) + shippingTotal;
+      const totalCard = subtotal + shippingTotal;
+      const installmentVal = totalCard / 3;
+
+      // Atualizar no DOM
+      const summaryItemsCount = document.getElementById('summary-items-count');
+      const summarySubtotal = document.getElementById('summary-subtotal');
+      const summaryDiscount = document.getElementById('summary-discount');
+      const summaryShipping = document.getElementById('summary-shipping');
+      const summaryTotalPix = document.getElementById('summary-total-pix');
+      const summaryTotalCard = document.getElementById('summary-total-card');
+      const modalTotal = document.getElementById('modal-total');
+
+      if (summaryItemsCount) summaryItemsCount.textContent = `${totalItemsCount} ${totalItemsCount === 1 ? 'item' : 'itens'}`;
+      if (summarySubtotal) summarySubtotal.textContent = formatBRL(subtotal);
+      if (summaryDiscount) summaryDiscount.textContent = `- ${formatBRL(pixDiscount)}`;
+      if (summaryShipping) summaryShipping.textContent = shippingTotal === 0 ? 'Grátis' : formatBRL(shippingTotal);
+      if (summaryTotalPix) summaryTotalPix.textContent = formatBRL(totalPix);
+      if (summaryTotalCard) summaryTotalCard.textContent = formatBRL(totalCard);
+      if (modalTotal) modalTotal.textContent = formatBRL(totalPix);
+
+      // Se não houver itens, mostra estado vazio
+      if (items.length === 0) {
+        showEmptyState();
+      }
+    }
+
+    // Gerenciador de cliques de quantidade (+ e -)
+    document.addEventListener('click', function(e) {
+      if (e.target.closest('.qty-btn-plus')) {
+        const btn = e.target.closest('.qty-btn-plus');
+        const input = btn.parentElement.querySelector('.qty-input');
+        let current = parseInt(input.value || 1, 10);
+        if (current < 15) {
+          input.value = current + 1;
+          recalculateCart();
+        }
+      }
+
+      if (e.target.closest('.qty-btn-minus')) {
+        const btn = e.target.closest('.qty-btn-minus');
+        const input = btn.parentElement.querySelector('.qty-input');
+        let current = parseInt(input.value || 1, 10);
+        if (current > 1) {
+          input.value = current - 1;
+          recalculateCart();
+        }
+      }
+
+      // Remover item individual
+      if (e.target.closest('.btn-remove-item')) {
+        const item = e.target.closest('.cart-item');
+        const producerCard = item.closest('.producer-card');
+        
+        item.style.transition = 'opacity 0.25s, transform 0.25s';
+        item.style.opacity = '0';
+        item.style.transform = 'translateX(20px)';
+        
+        setTimeout(() => {
+          item.remove();
+          // Se o produtor ficou sem itens, remove o bloco do produtor
+          if (producerCard && producerCard.querySelectorAll('.cart-item').length === 0) {
+            producerCard.remove();
+          }
+          recalculateCart();
+        }, 250);
+      }
+    });
+
+    // Mudança de opção de envio
+    document.querySelectorAll('input[type="radio"][name^="shipping-"]').forEach(radio => {
+      radio.addEventListener('change', recalculateCart);
+    });
+
+    // Simulação do Estado Vazio
+    function showEmptyState() {
+      if (cartContentView) cartContentView.classList.add('hidden');
+      if (cartEmptyView) cartEmptyView.classList.remove('hidden');
+    }
+
+    function showContentView() {
+      if (cartContentView) cartContentView.classList.remove('hidden');
+      if (cartEmptyView) cartEmptyView.classList.add('hidden');
+    }
+
+    if (btnSimulateEmpty) {
+      btnSimulateEmpty.addEventListener('click', showEmptyState);
+    }
+
+    if (btnRestoreCart) {
+      btnRestoreCart.addEventListener('click', () => {
+        location.reload();
+      });
+    }
+
+    if (btnClearCart) {
+      btnClearCart.addEventListener('click', () => {
+        if (confirm('Deseja realmente esvaziar todo o seu carrinho de compras?')) {
+          showEmptyState();
+        }
+      });
+    }
+
+    // Modal de Checkout
+    if (btnCheckout) {
+      btnCheckout.addEventListener('click', () => {
+        if (checkoutModal) checkoutModal.classList.remove('hidden');
+      });
+    }
+
+    if (modalClose) {
+      modalClose.addEventListener('click', () => {
+        if (checkoutModal) checkoutModal.classList.add('hidden');
+      });
+    }
+
+    // Cupom de Desconto Demonstrativo
+    if (btnApplyCoupon) {
+      btnApplyCoupon.addEventListener('click', () => {
+        const val = couponInput.value.trim();
+        if (val.length > 0) {
+          couponAlert.classList.remove('hidden');
+          couponInput.disabled = true;
+          btnApplyCoupon.textContent = 'Aplicado';
+          btnApplyCoupon.disabled = true;
+        } else {
+          couponInput.focus();
+        }
+      });
+    }
+
+    // Inicializa os totais corretos
+    recalculateCart();
+  })();
+</script></main><footer class="w-full bg-surface-container-low text-on-surface mt-space-xl"><div class="max-w-[1200px] mx-auto px-margin lg:px-margin-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-lg mb-space-xl"><div class="lg:col-span-2 pr-0 lg:pr-space-md"><div class="flex items-center gap-3 mb-space-sm"><img alt="Feito no Seridó Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UpOLnYeCV5tFQw4WoaF16XFaKh3DSoiob6OYjmUie3YoOOTLYl1ntFFpeuzV8wBt8pttb9x62g2mj6vpnp51vlJEuP4kAHgkz8aljHNTn--EAq_KOde3md_uBPeCtdWONTaYiuNI88Vs5ZMGE7tY9-yZTJFbc0HPRcXKscIl2OFOfBomnB6LryTQ0gjjzDxSv8Aayz81zzwpo_ZmREwaxsXD84gcMAnSVoWooDha_ZaFUtGnou53vxrgqt"/><span class="font-headline-sm text-headline-sm text-primary">Feito no Seridó</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md leading-relaxed">Feito no Seridó é uma iniciativa de comércio justo comunitário, criada para valorizar e conectar diretamente mestres artesãos, cozinheiras tradicionais e agroprodutores de Picuí e municípios vizinhos do Seridó Oriental Paraibano ao Brasil.</p><div class="flex items-center gap-2"><span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">eco</span>Sustentabilidade Local</span><span class="px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">handshake</span>Comércio Direto</span></div></div><div><h4 class="font-headline-sm text-[16px] text-primary mb-space-sm">Descubra</h4><ul class="space-y-2"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="categoria-rendas" href="#">Bordados &amp; Rendas</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="categoria-ceramica" href="#">Cerâmica &amp; Barro</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="categoria-culinaria" href="#">Culinária Tradicional</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="categoria-couro" href="#">Madeira &amp; Couro</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="produtos" href="#">Novos Produtos</a></li></ul></div><div><h4 class="font-headline-sm text-[16px] text-primary mb-space-sm">Produtores</h4><ul class="space-y-2"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="artesas-e-produtores" href="#">Conhecer as Artesãs</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="cooperativas-picui" href="#">Cooperativas de Picuí</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="cadastro-artesao" href="#">Como vender aqui</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="guia-vendedor" href="#">Guia do Produtor</a></li></ul></div><div><h4 class="font-headline-sm text-[16px] text-primary mb-space-sm">Contato &amp; Apoio</h4><ul class="space-y-2"><li class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>Picuí - Paraíba</li><li class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">support_agent</span>Apoio Comunitário</li><li class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">chat</span>(83) 99876-5432</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="ajuda-e-politicas" href="#">Políticas &amp; Entregas</a></li></ul></div></div><div class="pt-space-md border-t border-surface-container flex flex-col sm:flex-row items-center justify-between gap-space-sm text-center sm:text-left"><p class="font-label-sm text-label-sm text-outline">© 2025 Feito no Seridó - Comércio Regional &amp; Desenvolvimento Sustentável. Picuí / PB.</p><div class="flex items-center gap-space-md"><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" data-path="ajuda-e-politicas" href="#">Privacidade</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" data-path="ajuda-e-politicas" href="#">Termos de Uso</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" data-path="sobre-o-projeto" href="#">Selo de Origem</a></div></div></div></footer></body></html>

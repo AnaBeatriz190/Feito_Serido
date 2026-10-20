@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Feito no Seridó - Comércio Regional</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-bright": "#fff8f6",
+          "surface-container": "#f7ebe8",
+          "on-primary-container": "#fffbff",
+          "surface-container-high": "#f2e6e2",
+          "secondary-fixed-dim": "#abd0a3",
+          "primary-fixed-dim": "#ffb59c",
+          "inverse-on-surface": "#faeeeb",
+          "on-error": "#ffffff",
+          "on-secondary-container": "#4b6d46",
+          "error-container": "#ffdad6",
+          "on-primary": "#ffffff",
+          "outline-variant": "#dec0b7",
+          "surface-variant": "#ece0dd",
+          "outline": "#8a726a",
+          "on-surface": "#201a18",
+          "on-background": "#201a18",
+          "on-tertiary": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "surface": "#fff8f6",
+          "on-tertiary-fixed-variant": "#633f00",
+          "on-secondary": "#ffffff",
+          "on-primary-fixed-variant": "#822801",
+          "primary-container": "#bf542c",
+          "on-secondary-fixed-variant": "#2e4e2b",
+          "tertiary-container": "#9f6a0b",
+          "error": "#ba1a1a",
+          "on-surface-variant": "#57423b",
+          "background": "#fff8f6",
+          "on-secondary-fixed": "#032104",
+          "surface-dim": "#e3d8d4",
+          "on-tertiary-container": "#fffbff",
+          "secondary-container": "#c7edbd",
+          "on-tertiary-fixed": "#291800",
+          "secondary": "#466641",
+          "inverse-surface": "#352f2d",
+          "primary-fixed": "#ffdbcf",
+          "surface-container-highest": "#ece0dd",
+          "on-error-container": "#93000a",
+          "surface-tint": "#a23e18",
+          "tertiary-fixed-dim": "#fcba5b",
+          "secondary-fixed": "#c7edbd",
+          "inverse-primary": "#ffb59c",
+          "primary": "#9f3c16",
+          "tertiary": "#7f5300",
+          "on-primary-fixed": "#390c00",
+          "surface-container-low": "#fdf1ed",
+          "tertiary-fixed": "#ffddb4"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin-desktop": "3rem",
+          "margin": "1rem",
+          "space-md": "1rem",
+          "space-xs": "0.25rem",
+          "gutter": "1rem",
+          "space-lg": "1.5rem",
+          "space-sm": "0.5rem",
+          "margin-tablet": "2rem",
+          "space-xl": "2.5rem",
+          "gutter-desktop": "1.5rem"
+        },
+        "fontFamily": {
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "display-lg": [
+            "Playfair Display"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg-mobile": [
+            "Playfair Display"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ]
+        },
+        "fontSize": {
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-sm": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "26px",
+            {
+              "lineHeight": "34px",
+              "letterSpacing": "0",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg": [
+            "48px",
+            {
+              "lineHeight": "56px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_2px_12px_rgba(32,26,24,0.05)]"><div class="bg-primary text-on-primary py-2 px-margin lg:px-margin-desktop"><div class="max-w-[1200px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-1 text-center sm:text-left"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">local_shipping</span><span class="font-label-sm text-label-sm">Apoie os produtores locais de Picuí e Seridó Oriental Paraibano | Entrega rápida e retirada combinada</span></div><a class="font-label-sm text-label-sm underline font-bold hover:text-primary-fixed transition-colors" data-path="cadastro-artesao" href="#">Cadastre sua loja artesanal</a></div></div><div class="h-20 max-w-[1200px] mx-auto px-margin lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-3 shrink-0"><img alt="Feito no Seridó Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UpOLnYeCV5tFQw4WoaF16XFaKh3DSoiob6OYjmUie3YoOOTLYl1ntFFpeuzV8wBt8pttb9x62g2mj6vpnp51vlJEuP4kAHgkz8aljHNTn--EAq_KOde3md_uBPeCtdWONTaYiuNI88Vs5ZMGE7tY9-yZTJFbc0HPRcXKscIl2OFOfBomnB6LryTQ0gjjzDxSv8Aayz81zzwpo_ZmREwaxsXD84gcMAnSVoWooDha_ZaFUtGnou53vxrgqt"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-none">Feito no Seridó</span><span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Picuí &amp; Região</span></div></div><div class="hidden md:flex flex-1 max-w-md mx-space-md"><div class="relative w-full flex items-center"><input class="w-full h-10 pl-4 pr-10 rounded-full bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm outline-none focus:bg-surface-container-lowest transition-all shadow-[inset_0_1px_2px_rgba(0,0,0,0.03)]" placeholder="Buscar renda de labirinto, cerâmica, carne de sol, queijos..." type="text"/><button aria-label="Buscar" class="absolute right-1 top-1 bottom-1 w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary hover:bg-primary-container transition-colors"><span class="material-symbols-outlined text-[18px]">search</span></button></div></div><div class="flex items-center gap-space-sm sm:gap-space-md shrink-0"><div class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md"><span class="material-symbols-outlined text-[16px]">location_on</span><span>Picuí - PB</span></div><a aria-label="Favoritos" class="relative p-2 text-on-surface-variant hover:text-primary transition-colors" data-path="favoritos" href="#"><span class="material-symbols-outlined text-[24px]">favorite</span><span class="absolute top-1 right-1 w-4 h-4 bg-tertiary text-on-tertiary font-label-sm text-[10px] rounded-full flex items-center justify-center">0</span></a><a aria-label="Sacola de Compras" class="relative p-2 text-on-surface-variant hover:text-primary transition-colors" data-path="carrinho" href="#"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="absolute top-1 right-1 w-4 h-4 bg-primary text-on-primary font-label-sm text-[10px] rounded-full flex items-center justify-center">2</span></a><div class="flex items-center gap-2 pl-2"><a class="hidden sm:flex flex-col text-right" data-path="minha-conta" href="#"><span class="font-label-sm text-label-sm text-outline">Olá, Visitante</span><span class="font-label-md text-label-md text-on-surface font-semibold">Minha Conta</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div><div class="bg-surface-container-low"><div class="max-w-[1200px] mx-auto px-margin lg:px-margin-desktop flex items-center justify-between"><nav class="flex items-center gap-1 sm:gap-2 overflow-x-auto py-1" data-active-classes="text-primary font-bold bg-surface-container"><a class="font-label-lg text-label-lg text-on-surface-variant px-3 py-2 rounded-lg transition-colors hover:text-on-surface whitespace-nowrap" data-path="inicio" href="#">Início</a><a class="font-label-lg text-label-lg text-on-surface-variant px-3 py-2 rounded-lg transition-colors hover:text-on-surface whitespace-nowrap" data-path="produtos" href="#">Explorar Produtos</a><a class="font-label-lg text-label-lg text-on-surface-variant px-3 py-2 rounded-lg transition-colors hover:text-on-surface whitespace-nowrap" data-path="artesas-e-produtores" href="#">Artesãs &amp; Produtores</a><a class="font-label-lg text-label-lg text-on-surface-variant px-3 py-2 rounded-lg transition-colors hover:text-on-surface whitespace-nowrap" data-path="sabores-do-serido" href="#">Sabores do Seridó</a><a class="font-label-lg text-label-lg text-on-surface-variant px-3 py-2 rounded-lg transition-colors hover:text-on-surface whitespace-nowrap" data-path="sobre-o-projeto" href="#">Sobre o Projeto</a></nav><div class="hidden lg:flex items-center gap-1 text-secondary font-label-sm text-label-sm py-1"><span class="material-symbols-outlined text-[16px]">verified</span><span>Certificação de Origem Seridó</span></div></div></div></header><main class="w-full pt-36 bg-surface min-h-[calc(100vh-28rem)]"><div class="flex flex-col w-full">
+<!-- Stepper de Checkout -->
+<section class="w-full bg-surface-container-low py-6 shadow-sm">
+<div class="max-w-[1200px] mx-auto px-margin lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px]">verified_user</span>
+            Ambiente Seguro · Repasse Direto Cooperativo
+          </span>
+<h1 class="font-headline-md text-headline-md text-on-surface mt-0.5">Finalização da Compra Regional</h1>
+</div>
+<!-- Indicador de Etapas -->
+<div class="flex items-center gap-2 sm:gap-4 overflow-x-auto py-1">
+<!-- Etapa 1 -->
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<span class="font-label-md text-label-md text-secondary font-semibold hidden sm:inline">Carrinho</span>
+</div>
+<div class="w-6 sm:w-10 h-0.5 bg-secondary"></div>
+<!-- Etapa 2 -->
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-md text-label-md shadow-md ring-4 ring-primary-fixed">
+              2
+            </div>
+<span class="font-label-md text-label-md text-primary font-bold whitespace-nowrap">Identificação &amp; Envio</span>
+</div>
+<div class="w-6 sm:w-10 h-0.5 bg-outline-variant"></div>
+<!-- Etapa 3 -->
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-md text-label-md">
+              3
+            </div>
+<span class="font-label-md text-label-md text-on-surface-variant hidden sm:inline">Pagamento</span>
+</div>
+<div class="w-6 sm:w-10 h-0.5 bg-outline-variant"></div>
+<!-- Etapa 4 -->
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-outline flex items-center justify-center font-label-md text-label-md">
+              4
+            </div>
+<span class="font-label-md text-label-md text-outline hidden md:inline">Confirmação</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Corpo Principal: Formulários e Resumo -->
+<main class="w-full py-8 lg:py-12 bg-surface">
+<div class="max-w-[1200px] mx-auto px-margin lg:px-margin-desktop">
+<form action="/checkout/processar" id="checkout-form" method="POST">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Coluna 1: Formulários em Etapas Fluidas (8 Colunas) -->
+<div class="lg:col-span-8 flex flex-col gap-8">
+<!-- SEÇÃO 1: Identificação do Comprador -->
+<section class="bg-surface-container-lowest rounded-xl p-6 sm:p-8 shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">badge</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">1. Identificação do Comprador</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dados para emissão de nota fiscal de origem e contato com artesãs</p>
+</div>
+</div>
+<button class="text-left sm:text-right font-label-sm text-label-sm text-primary hover:underline font-semibold" type="button">
+                  Já tem conta? Entrar com 1 clique
+                </button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="sm:col-span-2">
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-semibold" for="nome_completo">
+                    Nome Completo <span class="text-error">*</span>
+</label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" id="nome_completo" name="nome_completo" placeholder="Ex: Maria Alice Vasconcelos de Medeiros" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-semibold" for="email">
+                    E-mail para envio do recibo <span class="text-error">*</span>
+</label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" id="email" name="email" placeholder="voce@exemplo.com.br" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-semibold" for="cpf">
+                    CPF (Obrigatório para nota da cooperativa) <span class="text-error">*</span>
+</label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" id="cpf" name="cpf" placeholder="000.000.000-00" required="" type="text"/>
+</div>
+<div class="sm:col-span-2">
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-semibold" for="telefone_whatsapp">
+                    Telefone / WhatsApp <span class="text-error">*</span>
+</label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" id="telefone_whatsapp" name="telefone_whatsapp" placeholder="(83) 90000-0000" required="" type="tel"/>
+<div class="flex items-center gap-2 mt-2 px-3 py-2 rounded-lg bg-secondary-container/50 text-secondary">
+<span class="material-symbols-outlined text-[18px] shrink-0">chat</span>
+<span class="font-label-sm text-label-sm">
+                      Você receberá atualizações de rastreio e fotos da preparação dos produtos via WhatsApp direto das cooperativas de Picuí.
+                    </span>
+</div>
+</div>
+<div class="sm:col-span-2 pt-2">
+<label class="flex items-center gap-3 cursor-pointer">
+<input checked="" class="w-5 h-5 rounded text-primary focus:ring-primary accent-primary" name="salvar_dados" type="checkbox" value="sim"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                      Salvar meus dados com segurança para compras futuras na rede artesanal do Seridó
+                    </span>
+</label>
+</div>
+</div>
+</section>
+<!-- SEÇÃO 2: Endereço & Logística Compartilhada dos Produtores -->
+<section class="bg-surface-container-lowest rounded-xl p-6 sm:p-8 shadow-sm">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">local_shipping</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">2. Endereço e Logística Solidária</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Entregas articuladas diretamente com produtores locais</p>
+</div>
+</div>
+<!-- Escolha de Modalidade Geral -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+<label class="relative flex items-center gap-3 p-4 rounded-xl cursor-pointer bg-primary-fixed/25 text-on-surface transition-all">
+<input checked="" class="w-4 h-4 text-primary accent-primary" name="modalidade_geral" type="radio" value="entrega_domicilio"/>
+<div>
+<span class="font-label-lg text-label-lg font-bold block">Entrega no meu endereço</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Receba no conforto da sua residência</span>
+</div>
+</label>
+<label class="relative flex items-center gap-3 p-4 rounded-xl cursor-pointer bg-surface-container-low hover:bg-surface-container text-on-surface transition-all">
+<input class="w-4 h-4 text-primary accent-primary" name="modalidade_geral" type="radio" value="retirada_pontos"/>
+<div>
+<span class="font-label-lg text-label-lg font-bold block">Retirada Comunitária</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pontos centrais em Picuí (Grátis)</span>
+</div>
+</label>
+</div>
+<!-- Campos de Endereço -->
+<div class="grid grid-cols-1 sm:grid-cols-6 gap-4 mb-6">
+<div class="sm:col-span-2">
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-semibold" for="cep">CEP</label>
+<div class="relative">
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" id="cep" name="cep" type="text" value="58187-000"/>
+<span class="absolute right-3 top-3 text-secondary font-label-sm text-label-sm font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Picuí/PB
+                    </span>
+</div>
+</div>
+<div class="sm:col-span-4">
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-semibold" for="logradouro">Rua / Logradouro</label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" id="logradouro" name="logradouro" type="text" value="Rua Cel. José Pereira"/>
+</div>
+<div class="sm:col-span-2">
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-semibold" for="numero">Número</label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" id="numero" name="numero" type="text" value="142"/>
+</div>
+<div class="sm:col-span-2">
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-semibold" for="bairro">Bairro</label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" id="bairro" name="bairro" type="text" value="Centro"/>
+</div>
+<div class="sm:col-span-2">
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-semibold" for="complemento">Complemento</label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" id="complemento" name="complemento" placeholder="Apto, fundos, ponto de ref." type="text"/>
+</div>
+</div>
+<!-- Caixa Informativa Multi-vendor Regional -->
+<div class="bg-surface-container-low rounded-xl p-5 mb-6">
+<div class="flex items-start gap-3 mb-4">
+<span class="material-symbols-outlined text-primary text-[24px]">hub</span>
+<div>
+<h3 class="font-headline-sm text-[17px] text-on-surface">Divisão Logística por Produtor da Caatinga</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Seu pedido agrupa 3 produtores artesanais autônomos. Veja as condições e opções individuais:
+                    </p>
+</div>
+</div>
+<!-- Lista de Produtores com suas opções de entrega -->
+<div class="space-y-4">
+<!-- Produtor 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-bold text-primary">
+                        DZ
+                      </div>
+<div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">Ateliê Dona Zefinha (Renda de Labirinto)</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">location_on</span> Picuí - PB (Bairro Limeira)
+                        </span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-2">
+<label class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm cursor-pointer hover:bg-secondary-container">
+<input checked="" class="accent-secondary" name="envio_produtor_1" type="radio" value="retirada"/>
+<span>Retirada Grátis (Assoc. Rendeiras)</span>
+</label>
+<label class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm cursor-pointer hover:bg-surface-container-high">
+<input class="accent-primary" name="envio_produtor_1" type="radio" value="domicilio"/>
+<span>Entrega Local (+R$ 8,00)</span>
+</label>
+</div>
+</div>
+<!-- Produtor 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-bold text-tertiary">
+                        FO
+                      </div>
+<div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">Fazenda Olho D'Água (Laticínios &amp; Queijos)</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">location_on</span> Picuí - PB (Zona Rural)
+                        </span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<label class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-fixed/30 text-primary font-label-sm text-label-sm">
+<input checked="" class="accent-primary" name="envio_produtor_2" type="radio" value="termica"/>
+<span>Entrega Térmica Domiciliar (+R$ 6,00)</span>
+</label>
+</div>
+</div>
+<!-- Produtor 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-bold text-outline">
+                        MS
+                      </div>
+<div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">Mestre Severino Oleiro (Cerâmica Rústica)</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">location_on</span> Carnaúba dos Dantas - RN
+                        </span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<label class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm">
+<input checked="" class="accent-secondary" name="envio_produtor_3" type="radio" value="retirada_polo"/>
+<span>Ponto Regional de Picuí (Grátis)</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- Instrução especial -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-semibold" for="instrucao_entrega">
+                  Recado para as artesãs ou instruções de entrega (opcional)
+                </label>
+<textarea class="w-full p-4 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner resize-none" id="instrucao_entrega" name="instrucao_entrega" placeholder="Ex: Pode entregar no comércio da esquina se eu não estiver, ou recado de felicitações para Dona Zefinha..." rows="2"></textarea>
+</div>
+</section>
+<!-- SEÇÃO 3: Forma de Pagamento -->
+<section class="bg-surface-container-lowest rounded-xl p-6 sm:p-8 shadow-sm">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">payments</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">3. Forma de Pagamento</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Transação direta e transparente, sem intermediários abusivos</p>
+</div>
+</div>
+<!-- Seletor de Métodos de Pagamento em Abas/Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
+<!-- Opção 1: Pix -->
+<button class="payment-tab p-4 rounded-xl text-left bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between h-28 relative overflow-hidden ring-2 ring-primary bg-primary-fixed/20" id="tab-pix" onclick="selectPayment('pix')" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="material-symbols-outlined text-primary text-[28px]">qr_code_2</span>
+<span class="px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-[10px] font-bold">5% OFF</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">Pix Instantâneo</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Liberação imediata</span>
+</div>
+</button>
+<!-- Opção 2: Cartão de Crédito -->
+<button class="payment-tab p-4 rounded-xl text-left bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between h-28" id="tab-cartao" onclick="selectPayment('cartao')" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="material-symbols-outlined text-on-surface-variant text-[28px]">credit_card</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Até 3x sem juros</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">Cartão de Crédito</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Todas as bandeiras</span>
+</div>
+</button>
+<!-- Opção 3: Boleto Regional -->
+<button class="payment-tab p-4 rounded-xl text-left bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between h-28" id="tab-boleto" onclick="selectPayment('boleto')" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="material-symbols-outlined text-on-surface-variant text-[28px]">receipt_long</span>
+<span class="font-label-sm text-label-sm text-outline">3 dias úteis</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">Boleto Bancário</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Banco do Brasil / Caixa</span>
+</div>
+</button>
+</div>
+<!-- Input Hidden do Método -->
+<input id="metodo_pagamento_input" name="metodo_pagamento" type="hidden" value="pix"/>
+<!-- Conteúdo Dinâmico do Pix -->
+<div class="bg-surface-container-low rounded-xl p-6" id="content-pix">
+<div class="flex flex-col md:flex-row items-center gap-6">
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-md shrink-0 flex flex-col items-center">
+<!-- SVG Ilustrativo de QR Code Estilizado -->
+<svg class="w-36 h-36 text-on-surface" fill="currentColor" viewbox="0 0 100 100">
+<rect fill="currentColor" height="30" rx="3" width="30" x="0" y="0"></rect>
+<rect fill="#fff8f6" height="18" rx="2" width="18" x="6" y="6"></rect>
+<rect fill="currentColor" height="10" width="10" x="10" y="10"></rect>
+<rect fill="currentColor" height="30" rx="3" width="30" x="70" y="0"></rect>
+<rect fill="#fff8f6" height="18" rx="2" width="18" x="76" y="6"></rect>
+<rect fill="currentColor" height="10" width="10" x="80" y="10"></rect>
+<rect fill="currentColor" height="30" rx="3" width="30" x="0" y="70"></rect>
+<rect fill="#fff8f6" height="18" rx="2" width="18" x="6" y="76"></rect>
+<rect fill="currentColor" height="10" width="10" x="10" y="80"></rect>
+<rect height="10" rx="2" width="15" x="40" y="10"></rect>
+<rect height="10" rx="2" width="20" x="40" y="30"></rect>
+<rect height="15" rx="2" width="15" x="10" y="40"></rect>
+<rect height="15" rx="2" width="15" x="35" y="50"></rect>
+<rect height="10" rx="2" width="25" x="60" y="45"></rect>
+<rect height="20" rx="2" width="15" x="60" y="65"></rect>
+<rect height="15" rx="2" width="15" x="80" y="80"></rect>
+<rect height="15" rx="2" width="12" x="40" y="75"></rect>
+</svg>
+<span class="font-label-sm text-[10px] text-outline mt-2 tracking-wider">PIX DINÂMICO BACEN</span>
+</div>
+<div class="flex-1 w-full">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm mb-2">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+                      Economize R$ 17,48 no Pix
+                    </span>
+<h4 class="font-headline-sm text-[18px] text-on-surface mb-1">Chave Pix Copia e Cola</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">
+                      A aprovação é instantânea. As artesãs de Picuí e região iniciam o preparo e embalagem das peças no mesmo dia útil!
+                    </p>
+<div class="flex items-center gap-2">
+<input class="w-full h-11 px-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm truncate focus:outline-none shadow-sm" readonly="" type="text" value="00020126580014br.gov.bcb.pix0136feito-no-serido-coop-picui-pb5204000053039865406338.035802BR"/>
+<button class="px-4 h-11 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container shrink-0 transition-colors flex items-center gap-1" onclick="navigator.clipboard.writeText('00020126580014br.gov.bcb.pix0136feito-no-serido-coop-picui-pb5204000053039865406338.035802BR'); alert('Chave Pix copiada com sucesso!');" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+                        Copiar
+                      </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Conteúdo Dinâmico do Cartão de Crédito -->
+<div class="hidden bg-surface-container-low rounded-xl p-6" id="content-cartao">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="sm:col-span-2">
+<label class="block font-label-md text-label-md text-on-surface mb-1 font-semibold">Número do Cartão</label>
+<div class="relative">
+<input class="w-full h-12 pl-4 pr-12 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-inner focus:outline-none focus:ring-2 focus:ring-primary" name="cartao_numero" placeholder="0000 0000 0000 0000" type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-3 text-outline">credit_card</span>
+</div>
+</div>
+<div class="sm:col-span-2">
+<label class="block font-label-md text-label-md text-on-surface mb-1 font-semibold">Nome impresso no cartão</label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-inner focus:outline-none focus:ring-2 focus:ring-primary" name="cartao_nome" placeholder="Como está gravado no cartão" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1 font-semibold">Validade (MM/AA)</label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-inner focus:outline-none focus:ring-2 focus:ring-primary" name="cartao_validade" placeholder="12/28" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1 font-semibold">Código CVV</label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-inner focus:outline-none focus:ring-2 focus:ring-primary" name="cartao_cvv" placeholder="123" type="text"/>
+</div>
+<div class="sm:col-span-2">
+<label class="block font-label-md text-label-md text-on-surface mb-1 font-semibold">Parcelamento sem acréscimo</label>
+<select class="w-full h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-inner focus:outline-none focus:ring-2 focus:ring-primary cursor-pointer" name="parcelas">
+<option value="1">1x de R$ 338,03 sem juros</option>
+<option value="2">2x de R$ 169,01 sem juros</option>
+<option value="3">3x de R$ 112,67 sem juros</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Conteúdo Dinâmico do Boleto -->
+<div class="hidden bg-surface-container-low rounded-xl p-6" id="content-boleto">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-[32px] shrink-0">print</span>
+<div>
+<h4 class="font-headline-sm text-[18px] text-on-surface mb-1">Boleto Bancário Regional</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">
+                      O boleto será gerado com vencimento para 3 dias úteis. Você pode pagar em qualquer banco, casa lotérica em Picuí ou aplicativo móvel.
+                    </p>
+<p class="font-label-sm text-label-sm text-outline">
+                      *A confirmação bancária do boleto leva de 1 a 2 dias úteis para liberação do envio pelas produtoras.
+                    </p>
+</div>
+</div>
+</div>
+<!-- Selo de Garantia e Economia Solidária -->
+<div class="mt-6 flex flex-col sm:flex-row items-center gap-4 p-4 rounded-xl bg-surface-container border-l-4 border-secondary">
+<span class="material-symbols-outlined text-secondary text-[28px] shrink-0">shield</span>
+<div class="text-center sm:text-left">
+<span class="font-label-md text-label-md font-bold text-on-surface block">
+                    Pagamento 100% Protegido · Circuito Fechado Seridó
+                  </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                    Seus dados trafegam criptografados. O valor só é repassado definitivamente às contas das artesãs após a confirmação da expedição.
+                  </span>
+</div>
+</div>
+</section>
+</div>
+<!-- Coluna 2: Sticky Order Summary & Social Impact (4 Colunas) -->
+<div class="lg:col-span-4 lg:sticky lg:top-40 flex flex-col gap-6">
+<!-- Resumo da Sacola -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-md">
+<div class="flex items-center justify-between pb-4 border-b border-surface-container">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Resumo da Sacola</h3>
+<span class="font-label-md text-label-md px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-bold">
+                  4 itens
+                </span>
+</div>
+<!-- Lista Compacta dos Produtos com Imagens Autênticas -->
+<div class="divide-y divide-surface-container-low my-4 space-y-3 pt-1">
+<!-- Item 1: Renda Labirinto -->
+<div class="pt-3 first:pt-0 flex items-center gap-3">
+<div class="w-16 h-16 rounded-lg overflow-hidden bg-surface-container-low shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Delicate white handmade labirinto lace table runner from Picuí Seridó, intricate openwork embroidery on rustic wooden background, bright natural sunlight, editorial craft aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBkgzUANv3Wx45MTiKPDA-8rMtcC3S2ha-fFvq8qA3z_SYQK9jtMmrW8whjWjVbbMxGcNPwof7eAPvm2JLn2hrWeF-JPrLehOXc_aYAi9_e8XPpuxhBN0Oa4OfveTeljAtbXJes5NdwcmU3vKQ5AYPQvTQfCXosDF9saErix9GcP82GmyWXd8SJ87cITEznSRobszXtaWElSB7vBmVgoVF0A_6f-aoIrt0osV0qcUfezq24MufRuu45g"/>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface truncate">Caminho de Mesa Labirinto</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Dona Zefinha · 1 un</p>
+<span class="font-label-md text-label-md font-semibold text-primary">R$ 145,00</span>
+</div>
+</div>
+<!-- Item 2: Toalha Mandacaru -->
+<div class="pt-3 flex items-center gap-3">
+<div class="w-16 h-16 rounded-lg overflow-hidden bg-surface-container-low shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Set of two rustic woven linen hand towels featuring subtle green mandacaru cactus embroidery, handmade in Picuí Paraiba, earthy terracotta and sage tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJMiW_HDWQbvgDBNy0SbfiGhHAzQmb5NGR-y72mH5Quo2Ezee-68jbwSNtGDp561o18xp0ScRkrFgVESDOiEYScEtbHWGpkWHjV_XOvyp7uygJThqF4RVW78Ck1uUn4k1KGYPsbexuQYNI8o647-uXo9RCcdxf2cPdLT1KWht-8MmX43Gybpw7EDZb8BP1rsWDRRgMXrm4_Bh5UmsIVf4qgwZApQUSDqs7ehktKHr4xtznWWWzPgEcYA"/>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface truncate">Toalha de Lavabo Mandacaru</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Dona Zefinha · 2 un</p>
+<span class="font-label-md text-label-md font-semibold text-primary">R$ 70,00</span>
+</div>
+</div>
+<!-- Item 3: Queijo Coalho Curado -->
+<div class="pt-3 flex items-center gap-3">
+<div class="w-16 h-16 rounded-lg overflow-hidden bg-surface-container-low shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Artisanal wheel of authentic Queijo de Coalho curado from Seridó on a wooden board with wild caatinga flowers, golden natural crust, warm editorial photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC68bpUL7H782ATykYPDnprbzEjjHlNlkPx3c3eX60nMkHzrqFd9AyqsZgeSJHMNS5IrE_eEo93DMXHW8h6cjSv0PM47BVr0TCh7nxHFasxu5L7LizCwJxKseyGOvU-dHlH-YqE3qbRp80yWJzhfxxAjtVcadP5yf57zWykN72Cmgyp7I-66YP0z8WMCL8_HCE0-WiihNVW0T3w_mN4J9k7AxqorYLMPhf34re-3V6FnLzy430jJrWmJQ"/>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface truncate">Queijo de Coalho Curado 800g</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Fazenda Olho D'Água · 1 un</p>
+<span class="font-label-md text-label-md font-semibold text-primary">R$ 42,50</span>
+</div>
+</div>
+<!-- Item 4: Cerâmica Severino -->
+<div class="pt-3 flex items-center gap-3">
+<div class="w-16 h-16 rounded-lg overflow-hidden bg-surface-container-low shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Handcrafted terracotta clay pot with traditional geometric engravings by local potter Severino from Carnauba dos Dantas, warm earthenware textures, soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAssk-HXfiNPS5DSuoin4UfOplokTUSfR1U_na2SvIHfSQNSTF3ReBYbdYhXwRKCsUw28UfqMnDBUKChKQrRt51r7txFKJKxvMZQvd1Zp8QbQm86dCPFxDo1wNwcvQMQBPqoaEXf8LDDLF480Obi2vynXSV_1MhMurMMh8t14buaNj9o516CLPjGDmyar8B_jIgxbF1sCYasYRkiUJyNV15ONFAdjGRDzbof9-CprJa4S96DD-ScKmzVQ"/>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface truncate">Vaso Terracota Entalhado</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Mestre Severino · 1 un</p>
+<span class="font-label-md text-label-md font-semibold text-primary">R$ 92,00</span>
+</div>
+</div>
+</div>
+<!-- Cupom Aplicado -->
+<div class="bg-secondary-container/30 rounded-lg p-3 my-4 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">sell</span>
+<div>
+<span class="font-label-sm text-label-sm font-bold text-secondary block">BEMVINDO10</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Cupom regional ativo (-R$ 10,00)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[18px]">check</span>
+</div>
+<!-- Discriminação de Custos -->
+<div class="space-y-2.5 py-4 border-t border-b border-surface-container font-body-sm text-body-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span>Subtotal dos itens</span>
+<span class="font-medium">R$ 349,50</span>
+</div>
+<div class="flex justify-between text-secondary">
+<span>Desconto Pix (5%)</span>
+<span class="font-bold">- R$ 17,48</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span class="flex items-center gap-1">
+                    Logística &amp; Entregas
+                    <span class="material-symbols-outlined text-[14px] text-outline" title="2 coletas grátis + 1 entrega térmica de laticínio">info</span>
+</span>
+<span>R$ 6,00</span>
+</div>
+<div class="flex justify-between text-secondary">
+<span>Cupom Boas-Vindas</span>
+<span class="font-bold">- R$ 10,00</span>
+</div>
+</div>
+<!-- Total Final -->
+<div class="pt-4 mb-6">
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">Total a Pagar</span>
+<div class="text-right">
+<span class="font-display-lg-mobile text-display-lg-mobile text-primary font-bold">R$ 338,03</span>
+<span class="block font-label-sm text-[11px] text-secondary">ou em até 3x de R$ 112,67 s/ juros no cartão</span>
+</div>
+</div>
+</div>
+<!-- Botão Principal de Finalização -->
+<button class="w-full h-14 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 group cursor-pointer" type="submit">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-110">lock</span>
+<span>Finalizar Pedido com Segurança</span>
+</button>
+</div>
+<!-- Box de Transparência Social / Comércio Justo -->
+<div class="bg-secondary-container/40 rounded-xl p-5 shadow-sm">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px] shrink-0">handshake</span>
+<div>
+<h4 class="font-headline-sm text-[15px] text-on-surface font-bold">Comércio Justo Sem Intermediários</h4>
+<p class="font-body-sm text-[13px] text-on-surface-variant leading-relaxed mt-1">
+                    Nesta compra, 100% da receita dos produtos vai diretamente para Dona Zefinha, a Cooperativa Olho D'Água e o ateliê do Mestre Severino.
+                  </p>
+</div>
+</div>
+</div>
+<!-- Contato Direto & Suporte Humano de Picuí -->
+<div class="bg-surface-container-low rounded-xl p-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface block">Dúvidas com o pedido?</span>
+<span class="font-label-sm text-label-sm text-outline">Atendimento local em Picuí</span>
+</div>
+</div>
+<a class="font-label-sm text-label-sm text-secondary font-bold hover:underline flex items-center gap-1" href="https://wa.me/5583998765432" rel="noopener" target="_blank">
+<span>(83) 99876-5432</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+</form>
+</div>
+</main>
+</div>
+<!-- Lógica Client-side para alternância das formas de pagamento -->
+<script>
+  function selectPayment(metodo) {
+    const input = document.getElementById('metodo_pagamento_input');
+    if (input) input.value = metodo;
+
+    // Reset visual tabs
+    const tabs = ['pix', 'cartao', 'boleto'];
+    tabs.forEach(function(m) {
+      const tabEl = document.getElementById('tab-' + m);
+      const contentEl = document.getElementById('content-' + m);
+
+      if (tabEl) {
+        if (m === metodo) {
+          tabEl.classList.add('ring-2', 'ring-primary', 'bg-primary-fixed/20');
+        } else {
+          tabEl.classList.remove('ring-2', 'ring-primary', 'bg-primary-fixed/20');
+        }
+      }
+
+      if (contentEl) {
+        if (m === metodo) {
+          contentEl.classList.remove('hidden');
+        } else {
+          contentEl.classList.add('hidden');
+        }
+      }
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-low text-on-surface mt-space-xl"><div class="max-w-[1200px] mx-auto px-margin lg:px-margin-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-lg mb-space-xl"><div class="lg:col-span-2 pr-0 lg:pr-space-md"><div class="flex items-center gap-3 mb-space-sm"><img alt="Feito no Seridó Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UpOLnYeCV5tFQw4WoaF16XFaKh3DSoiob6OYjmUie3YoOOTLYl1ntFFpeuzV8wBt8pttb9x62g2mj6vpnp51vlJEuP4kAHgkz8aljHNTn--EAq_KOde3md_uBPeCtdWONTaYiuNI88Vs5ZMGE7tY9-yZTJFbc0HPRcXKscIl2OFOfBomnB6LryTQ0gjjzDxSv8Aayz81zzwpo_ZmREwaxsXD84gcMAnSVoWooDha_ZaFUtGnou53vxrgqt"/><span class="font-headline-sm text-headline-sm text-primary">Feito no Seridó</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md leading-relaxed">Feito no Seridó é uma iniciativa de comércio justo comunitário, criada para valorizar e conectar diretamente mestres artesãos, cozinheiras tradicionais e agroprodutores de Picuí e municípios vizinhos do Seridó Oriental Paraibano ao Brasil.</p><div class="flex items-center gap-2"><span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">eco</span>Sustentabilidade Local</span><span class="px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">handshake</span>Comércio Direto</span></div></div><div><h4 class="font-headline-sm text-[16px] text-primary mb-space-sm">Descubra</h4><ul class="space-y-2"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="categoria-rendas" href="#">Bordados &amp; Rendas</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="categoria-ceramica" href="#">Cerâmica &amp; Barro</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="categoria-culinaria" href="#">Culinária Tradicional</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="categoria-couro" href="#">Madeira &amp; Couro</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="produtos" href="#">Novos Produtos</a></li></ul></div><div><h4 class="font-headline-sm text-[16px] text-primary mb-space-sm">Produtores</h4><ul class="space-y-2"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="artesas-e-produtores" href="#">Conhecer as Artesãs</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="cooperativas-picui" href="#">Cooperativas de Picuí</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="cadastro-artesao" href="#">Como vender aqui</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="guia-vendedor" href="#">Guia do Produtor</a></li></ul></div><div><h4 class="font-headline-sm text-[16px] text-primary mb-space-sm">Contato &amp; Apoio</h4><ul class="space-y-2"><li class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>Picuí - Paraíba</li><li class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">support_agent</span>Apoio Comunitário</li><li class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">chat</span>(83) 99876-5432</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="ajuda-e-politicas" href="#">Políticas &amp; Entregas</a></li></ul></div></div><div class="pt-space-md border-t border-surface-container flex flex-col sm:flex-row items-center justify-between gap-space-sm text-center sm:text-left"><p class="font-label-sm text-label-sm text-outline">© 2025 Feito no Seridó - Comércio Regional &amp; Desenvolvimento Sustentável. Picuí / PB.</p><div class="flex items-center gap-space-md"><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" data-path="ajuda-e-politicas" href="#">Privacidade</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" data-path="ajuda-e-politicas" href="#">Termos de Uso</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" data-path="sobre-o-projeto" href="#">Selo de Origem</a></div></div></div></footer></body></html>
