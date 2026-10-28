@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><title>Espaço da Produtora - Feito no Seridó</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-bright": "#fff8f6",
+          "surface-container": "#f7ebe8",
+          "on-primary-container": "#fffbff",
+          "surface-container-high": "#f2e6e2",
+          "secondary-fixed-dim": "#abd0a3",
+          "primary-fixed-dim": "#ffb59c",
+          "inverse-on-surface": "#faeeeb",
+          "on-error": "#ffffff",
+          "on-secondary-container": "#4b6d46",
+          "error-container": "#ffdad6",
+          "on-primary": "#ffffff",
+          "outline-variant": "#dec0b7",
+          "surface-variant": "#ece0dd",
+          "outline": "#8a726a",
+          "on-surface": "#201a18",
+          "on-background": "#201a18",
+          "on-tertiary": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "surface": "#fff8f6",
+          "on-tertiary-fixed-variant": "#633f00",
+          "on-secondary": "#ffffff",
+          "on-primary-fixed-variant": "#822801",
+          "primary-container": "#bf542c",
+          "on-secondary-fixed-variant": "#2e4e2b",
+          "tertiary-container": "#9f6a0b",
+          "error": "#ba1a1a",
+          "on-surface-variant": "#57423b",
+          "background": "#fff8f6",
+          "on-secondary-fixed": "#032104",
+          "surface-dim": "#e3d8d4",
+          "on-tertiary-container": "#fffbff",
+          "secondary-container": "#c7edbd",
+          "on-tertiary-fixed": "#291800",
+          "secondary": "#466641",
+          "inverse-surface": "#352f2d",
+          "primary-fixed": "#ffdbcf",
+          "surface-container-highest": "#ece0dd",
+          "on-error-container": "#93000a",
+          "surface-tint": "#a23e18",
+          "tertiary-fixed-dim": "#fcba5b",
+          "secondary-fixed": "#c7edbd",
+          "inverse-primary": "#ffb59c",
+          "primary": "#9f3c16",
+          "tertiary": "#7f5300",
+          "on-primary-fixed": "#390c00",
+          "surface-container-low": "#fdf1ed",
+          "tertiary-fixed": "#ffddb4"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin-desktop": "3rem",
+          "margin": "1rem",
+          "space-md": "1rem",
+          "space-xs": "0.25rem",
+          "gutter": "1rem",
+          "space-lg": "1.5rem",
+          "space-sm": "0.5rem",
+          "margin-tablet": "2rem",
+          "space-xl": "2.5rem",
+          "gutter-desktop": "1.5rem"
+        },
+        "fontFamily": {
+          "headline-md": ["Playfair Display"],
+          "body-md": ["Plus Jakarta Sans"],
+          "body-sm": ["Plus Jakarta Sans"],
+          "headline-lg-mobile": ["Playfair Display"],
+          "headline-lg": ["Playfair Display"],
+          "display-lg": ["Playfair Display"],
+          "label-md": ["Plus Jakarta Sans"],
+          "display-lg-mobile": ["Playfair Display"],
+          "label-lg": ["Plus Jakarta Sans"],
+          "body-lg": ["Plus Jakarta Sans"],
+          "label-sm": ["Plus Jakarta Sans"],
+          "headline-sm": ["Playfair Display"]
+        },
+        "fontSize": {
+          "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+          "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+          "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+          "headline-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "0", "fontWeight": "600"}],
+          "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+          "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+          "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+          "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700"}],
+          "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-xl shadow-[0_2px_12px_rgba(32,26,24,0.06)]"><div class="h-16 px-margin lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-3 shrink-0" data-path="inicio" href="#"><img alt="Feito no Seridó Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UpOLnYeCV5tFQw4WoaF16XFaKh3DSoiob6OYjmUie3YoOOTLYl1ntFFpeuzV8wBt8pttb9x62g2mj6vpnp51vlJEuP4kAHgkz8aljHNTn--EAq_KOde3md_uBPeCtdWONTaYiuNI88Vs5ZMGE7tY9-yZTJFbc0HPRcXKscIl2OFOfBomnB6LryTQ0gjjzDxSv8Aayz81zzwpo_ZmREwaxsXD84gcMAnSVoWooDha_ZaFUtGnou53vxrgqt"/><div class="flex flex-col"><span class="font-headline-sm text-[18px] text-primary leading-tight">Feito no Seridó</span><span class="font-label-sm text-[10px] text-secondary font-semibold uppercase tracking-wider">Portal da Produtora</span></div></a><div class="hidden md:flex items-center gap-2 pl-space-md border-l border-surface-container"><span class="w-2.5 h-2.5 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Oficina Conectada • Picuí / PB</span></div></div><div class="flex items-center gap-space-sm sm:gap-space-md shrink-0"><a class="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container-high text-primary hover:bg-surface-container font-label-md text-label-md transition-colors" data-path="loja-dona-zefinha" href="#"><span class="material-symbols-outlined text-[18px]">storefront</span><span>Ver Minha Loja Pública</span></a><div class="flex items-center gap-2 pl-space-sm"><div class="relative flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-full"><img alt="Dona Zefinha Foto" class="w-8 h-8 rounded-full object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNv975xR_-4C4B3agFJcrxSI5xuLR3AHltISP-EM5zBI4sn8AMhxGbv9tJoklGjxrd5sP1Qgiy58Cz1JkY3VZsAwPdZNLIi5wojAMheIIKrC56_xHTO-uc0cRnwIfBV2VGfPjVknGcQiHecJhQEtKLuf-_Gvfl1Ey152UGCAkjgL6W3jrBpqsPrsEVAi_Nz-MrMYBXR8AV7LAjXC7hEkNM94uEe6QC9zWGK__4veChrPFuGaPH5hKVmQ"/><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-bold leading-tight">Dona Zefinha</span><span class="font-label-sm text-[10px] text-outline leading-tight">Bairro Limeira, Picuí - PB</span></div><span class="material-symbols-outlined text-outline text-[18px] ml-1">expand_more</span></div></div></div></div></header><div class="flex w-full min-h-screen"><aside class="w-64 fixed top-16 bottom-0 left-0 z-40 bg-surface-container-low flex flex-col justify-between p-space-md overflow-y-auto"><div class="flex flex-col gap-space-md"><div class="p-space-sm rounded-xl bg-surface-container"><span class="font-label-sm text-[10px] uppercase font-bold text-secondary tracking-wider block mb-1">Artesã Credenciada</span><p class="font-headline-sm text-headline-sm text-on-surface text-[15px] leading-tight">Ateliê Bairro Limeira</p><span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Renda de Labirinto &amp; Crivo</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-surface-container text-primary font-bold shadow-sm"><a class="px-space-md py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container/60 hover:text-on-surface transition-colors whitespace-nowrap" data-path="painel-artesa" href="#">Visão Geral</a><a class="px-space-md py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container/60 hover:text-on-surface transition-colors whitespace-nowrap" data-path="pedidos-despachos" href="#">Meus Pedidos &amp; Despachos</a><a class="px-space-md py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container/60 hover:text-on-surface transition-colors whitespace-nowrap" data-path="catalogo-pecas" href="#">Catálogo de Peças</a><a class="px-space-md py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container/60 hover:text-on-surface transition-colors whitespace-nowrap" data-path="repasses-financeiro" href="#">Repasses &amp; Financeiro</a><a class="px-space-md py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container/60 hover:text-on-surface transition-colors whitespace-nowrap" data-path="mensagens-clientes" href="#">Mensagens das Compradoras</a><a class="px-space-md py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container/60 hover:text-on-surface transition-colors whitespace-nowrap" data-path="selo-origem-doc" href="#">Selo de Origem Picuí</a></nav></div><div class="flex flex-col gap-2 pt-space-md border-t border-surface-container"><a class="flex items-center justify-between px-3 py-2 rounded-lg bg-surface text-on-surface-variant hover:text-primary transition-colors text-left" data-path="ajuda-artesa" href="#"><span class="font-label-sm text-label-sm font-semibold">Dúvidas com Envio</span><span class="material-symbols-outlined text-[16px]">support</span></a><a class="font-label-sm text-label-sm text-outline hover:text-error transition-colors px-3 py-1" data-path="inicio" href="#">Sair do Painel</a></div></aside><main class="flex-1 pt-16 pl-64 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Navigation & Support Hero Bar -->
+<div class="px-margin lg:px-margin-desktop py-space-md border-b-0 bg-surface-container-low/70">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<!-- Breadcrumb & Back -->
+<div class="flex flex-col gap-1">
+<a class="inline-flex items-center gap-1.5 text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors w-fit" data-path="painel-artesa" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Voltar ao Painel da Produtora</span>
+</a>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-outline">
+<span>Portal da Produtora</span>
+<span>/</span>
+<span>Catálogo de Peças</span>
+<span>/</span>
+<span class="text-primary font-bold">Nova Peça</span>
+</div>
+</div>
+<!-- Human Support Pill (Ponto de Apoio Picuí) -->
+<a class="inline-flex items-center gap-3 px-4 py-2.5 rounded-full bg-surface-container-lowest text-on-surface shadow-sm hover:shadow-md transition-all group" href="https://wa.me/5583999990000" rel="noopener noreferrer" target="_blank">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</div>
+<div class="flex flex-col text-left pr-1">
+<span class="font-label-md text-label-md font-bold text-on-surface leading-tight">Dúvida para medir ou fotografar?</span>
+<span class="font-body-sm text-[12px] text-secondary font-medium leading-tight">Fale com Mariana no Ponto de Apoio (WhatsApp)</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-0.5 transition-transform text-[18px]">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Page Introduction Banner -->
+<div class="px-margin lg:px-margin-desktop pt-space-lg pb-space-md">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div class="max-w-2xl">
+<span class="inline-block px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider mb-2">
+          Selo de Origem • Seridó Oriental
+        </span>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Cadastrar Nova Peça no Catálogo</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+          Mostre o fruto do seu trabalho paciente para compradores de todo o Brasil. Preencha com calma e no seu tempo; se faltar algum detalhe, nossa equipe em Picuí finaliza com você.
+        </p>
+</div>
+<!-- Quick Step Indicator Badge -->
+<div class="flex items-center gap-2 bg-surface-container px-3.5 py-2 rounded-xl text-on-surface-variant font-label-md text-label-md shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]">verified</span>
+<span>Repasse 100% integral sem taxa de comissão</span>
+</div>
+</div>
+</div>
+<!-- Main Content Layout (2 Columns: Form & Sticky Live Preview) -->
+<div class="px-margin lg:px-margin-desktop py-space-md">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: 4 Friendly Form Steps (lg:col-span-8) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- STEP 1: Sobre a Peça e o Saber Manual -->
+<section class="bg-surface-container-lowest p-6 sm:p-8 rounded-2xl shadow-sm relative overflow-hidden">
+<div class="flex items-center gap-3 mb-6">
+<span class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-label-md text-label-md font-bold">1</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Sobre a Peça e o Saber Artesanal</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Conte o que você criou e a tradição que carrega em cada ponto ou traço.</p>
+</div>
+</div>
+<div class="flex flex-col gap-5">
+<!-- Nome da Peça -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center justify-between" for="item-name">
+<span>Nome da Peça <span class="text-primary">*</span></span>
+<span class="font-label-sm text-label-sm text-outline">Ex: Caminho de Mesa em Renda Labirinto</span>
+</label>
+<input class="h-12 px-4 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="item-name" placeholder="Digite como você chama essa peça no seu ateliê..." type="text" value="Caminho de Mesa em Renda Labirinto Ponto Palito"/>
+<p class="font-body-sm text-[13px] text-on-surface-variant">Um nome simples e bonito que descreve o que você fez com as mãos.</p>
+</div>
+<!-- Categoria / Técnica Artesanal (Visual Taktile Select) -->
+<div class="flex flex-col gap-2">
+<span class="font-label-lg text-label-lg text-on-surface">Qual é a técnica ou saber dessa peça? <span class="text-primary">*</span></span>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5" id="technique-picker">
+<!-- Option 1 (Selected) -->
+<button class="technique-chip active flex items-center gap-3 p-3 rounded-xl bg-primary-fixed text-on-primary-fixed font-label-md text-label-md text-left transition-all shadow-sm" type="button">
+<div class="w-9 h-9 rounded-lg bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">gesture</span>
+</div>
+<div class="flex flex-col">
+<span class="font-bold">Renda de Labirinto &amp; Crivo</span>
+<span class="text-[11px] opacity-80">Tradição de Picuí</span>
+</div>
+</button>
+<!-- Option 2 -->
+<button class="technique-chip flex items-center gap-3 p-3 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md text-left transition-all" type="button">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest text-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">brush</span>
+</div>
+<div class="flex flex-col">
+<span class="font-bold">Bordado &amp; Ponto Cheio</span>
+<span class="text-[11px] text-outline">Linhas no bastidor</span>
+</div>
+</button>
+<!-- Option 3 -->
+<button class="technique-chip flex items-center gap-3 p-3 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md text-left transition-all" type="button">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest text-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">potted_plant</span>
+</div>
+<div class="flex flex-col">
+<span class="font-bold">Cerâmica &amp; Barro</span>
+<span class="text-[11px] text-outline">Olaria e modelagem</span>
+</div>
+</button>
+<!-- Option 4 -->
+<button class="technique-chip flex items-center gap-3 p-3 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md text-left transition-all" type="button">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest text-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">restaurant</span>
+</div>
+<div class="flex flex-col">
+<span class="font-bold">Culinária &amp; Laticínios</span>
+<span class="text-[11px] text-outline">Doces, queijos de Picuí</span>
+</div>
+</button>
+<!-- Option 5 -->
+<button class="technique-chip flex items-center gap-3 p-3 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md text-left transition-all" type="button">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest text-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">hardware</span>
+</div>
+<div class="flex flex-col">
+<span class="font-bold">Artefatos Couro &amp; Madeira</span>
+<span class="text-[11px] text-outline">Sela, gibão, entalhe</span>
+</div>
+</button>
+<!-- Option 6 -->
+<button class="technique-chip flex items-center gap-3 p-3 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md text-left transition-all" type="button">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest text-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">grain</span>
+</div>
+<div class="flex flex-col">
+<span class="font-bold">Fiação &amp; Tear Manual</span>
+<span class="text-[11px] text-outline">Redes e mantas</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Matéria-Prima Principal (Chips) -->
+<div class="flex flex-col gap-2">
+<span class="font-label-lg text-label-lg text-on-surface">Matéria-Prima Utilizada (pode marcar mais de uma):</span>
+<div class="flex flex-wrap gap-2">
+<button class="px-3.5 py-1.5 rounded-full bg-secondary text-on-secondary font-label-md text-label-md flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span> Linho Puro Nacional
+                </button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px] text-outline">add</span> Fio Mercerizado 100% Algodão
+                </button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px] text-outline">add</span> Algodão Colorido da Paraíba
+                </button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px] text-outline">add</span> Barro de Olaria da Serra
+                </button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px] text-outline">add</span> Palha de Carnaúba Trançada
+                </button>
+</div>
+</div>
+<!-- História e Detalhes da Peça -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface" for="item-story">História e Memória da Peça</label>
+<textarea class="p-4 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-inner leading-relaxed resize-y" id="item-story" placeholder="Conte como você fez essa peça, quantos dias no bastidor levou, o que sua mãe ou avó lhe ensinou sobre esse ponto..." rows="4">Peça paciente tecida à mão no Bairro Limeira, em Picuí. Foram cerca de 18 dias de dedicação no bastidor de madeira, desfiando os fios de linho e tramando o ponto palito com fio fino 100% algodão. Uma renda firme, delicada e feita para atravessar gerações na mesa de família.</textarea>
+<span class="font-body-sm text-[13px] text-on-surface-variant">Quem compra no site adora ler a história do seu ateliê. Seja você mesma!</span>
+</div>
+</div>
+</section>
+<!-- STEP 2: Fotografias do Feito à Mão -->
+<section class="bg-surface-container-lowest p-6 sm:p-8 rounded-2xl shadow-sm flex flex-col gap-6">
+<div class="flex items-center gap-3">
+<span class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-label-md text-label-md font-bold">2</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Fotografias da Peça</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Boas fotos mostram o capricho do seu acabamento para quem está longe.</p>
+</div>
+</div>
+<!-- Dica do Ponto de Apoio de Picuí -->
+<div class="p-4 rounded-xl bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px] shrink-0 mt-0.5">wb_sunny</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Dica das Mestras de Picuí:</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-normal">
+                Tire as fotos perto da janela com a luz suave da manhã (das 7h às 9h). Coloque um lençol claro esticado ou use a sua mesa de madeira do almoço. Fica lindo e natural!
+              </p>
+</div>
+</div>
+<!-- Grade de Fotos com Pré-Carregadas e Dropzones -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<!-- Foto 1: Principal (com preview realista da renda) -->
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-1">
+<span>Foto Principal</span>
+<span class="text-primary">*</span>
+</span>
+<div class="relative group rounded-xl overflow-hidden aspect-[4/5] bg-surface-container-high shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Close-up macro of an exquisite handcrafted white lace table runner in traditional Brazilian Renda de Labirinto technique resting over rustic warm cedar wood with morning natural sunlight casting soft shadows, capturing intricate threadwork and linen texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD514d1MSPnJE27rYJgw040U69umPT5wYwSrOKs7AnaGNx_xvJXwfl4Ctd-4x24Q-8UFRQjoFiDI3ub_GzT72A-aiBvbNPe28mM21tDzuGUdKdTVOjYZX1ZE-ydq5tipwo6t09t-Yx695VCpciahKWcZok0L-_NFc_R1Bwrwe0fWpNyQs8Fir47nR2uXCCOf1YMfnyHqAcfNC6Enfqm_RugtWUO61plkIXJR76WFC7T1SCfgzXFj1-OYw"/>
+<div class="absolute inset-0 bg-inverse-surface/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
+<button class="w-9 h-9 rounded-full bg-surface text-on-surface flex items-center justify-center hover:scale-110 transition-transform shadow-md" title="Trocar foto" type="button">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</button>
+<button class="w-9 h-9 rounded-full bg-surface text-error flex items-center justify-center hover:scale-110 transition-transform shadow-md" title="Remover" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+<div class="absolute bottom-2 left-2 px-2 py-1 rounded-md bg-inverse-surface/75 text-inverse-on-surface font-label-sm text-[11px] backdrop-blur-sm">
+                  Capa do Produto
+                </div>
+</div>
+<span class="font-label-sm text-[11px] text-outline">Peça aberta inteira</span>
+</div>
+<!-- Foto 2: Detalhe do Ponto (com preview) -->
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md font-bold text-on-surface">Foto do Ponto de Perto</span>
+<div class="relative group rounded-xl overflow-hidden aspect-[4/5] bg-surface-container-high shadow-sm">
+<img class="w-full h-full object-cover" data-alt="High detail macro close-up of intricate handwoven Brazilian lace needlework showing linen threads meticulously pulled and woven in delicate geometric patterns, illuminated by warm caatinga regional light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD89Y_GrcfzA6EDD8lPqfY3SVvuaW76ADm6AgWEW9qq1URrg9KR386bEVwOUlL8bDqqfDFJ5uwNZlLaJtXinBLE6kwHbSaCOxFtC27MlRaqqSUiq1S9Dei_Y2P3z_W6R-8yXT00x9APyl9NUUlSIdaDn4JPFRx3zrroU46_HA0vYeo6aYtuRBcS5W9vYJw4Vq8q_IJaUHdBwFe3QHo1oZ4U6Hdl0XqfQItE7YCzhtkojdLuKx96L5-v3g"/>
+<div class="absolute inset-0 bg-inverse-surface/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
+<button class="w-9 h-9 rounded-full bg-surface text-on-surface flex items-center justify-center hover:scale-110 transition-transform shadow-md" type="button">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</button>
+<button class="w-9 h-9 rounded-full bg-surface text-error flex items-center justify-center hover:scale-110 transition-transform shadow-md" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+<div class="absolute bottom-2 left-2 px-2 py-1 rounded-md bg-inverse-surface/75 text-inverse-on-surface font-label-sm text-[11px] backdrop-blur-sm">
+                  Detalhe Têxtil
+                </div>
+</div>
+<span class="font-label-sm text-[11px] text-outline">Mostre a riqueza dos nós</span>
+</div>
+<!-- Foto 3: No Ateliê ou Bastidor (Placeholder Dropzone) -->
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md font-bold text-on-surface">Você ou Ateliê</span>
+<div class="aspect-[4/5] rounded-xl border-2 border-dashed border-outline-variant bg-surface-container-low hover:bg-surface-container flex flex-col items-center justify-center p-4 text-center cursor-pointer transition-colors group">
+<div class="w-12 h-12 rounded-full bg-surface-container-high group-hover:bg-primary-fixed group-hover:text-on-primary-fixed text-primary flex items-center justify-center mb-2 transition-colors">
+<span class="material-symbols-outlined text-[24px]">add_a_photo</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Adicionar foto do bastidor</span>
+<span class="font-body-sm text-[12px] text-outline mt-1">Você tecendo ou o cantinho da oficina</span>
+</div>
+<span class="font-label-sm text-[11px] text-outline">Gera afeto com quem compra</span>
+</div>
+</div>
+</section>
+<!-- STEP 3: Medidas, Cores e Disponibilidade -->
+<section class="bg-surface-container-lowest p-6 sm:p-8 rounded-2xl shadow-sm flex flex-col gap-6">
+<div class="flex items-center gap-3">
+<span class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-label-md text-label-md font-bold">3</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Medidas, Cores e Disponibilidade</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tamanho correto evita dúvidas dos Correios e ajuda a compor a mesa do cliente.</p>
+</div>
+</div>
+<!-- Dimensões em cm -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md font-bold text-on-surface" for="dim-comprimento">Comprimento (cm)</label>
+<div class="relative flex items-center">
+<input class="h-12 w-full px-4 pr-12 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="dim-comprimento" type="number" value="140"/>
+<span class="absolute right-4 font-label-md text-label-md text-outline">cm</span>
+</div>
+<span class="font-label-sm text-[11px] text-outline">Ponta a ponta da renda</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md font-bold text-on-surface" for="dim-largura">Largura (cm)</label>
+<div class="relative flex items-center">
+<input class="h-12 w-full px-4 pr-12 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="dim-largura" type="number" value="45"/>
+<span class="absolute right-4 font-label-md text-label-md text-outline">cm</span>
+</div>
+<span class="font-label-sm text-[11px] text-outline">Largura total</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md font-bold text-on-surface" for="dim-peso">Peso Estimado</label>
+<div class="relative flex items-center">
+<input class="h-12 w-full px-4 pr-12 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="dim-peso" type="number" value="320"/>
+<span class="absolute right-4 font-label-md text-label-md text-outline">g</span>
+</div>
+<span class="font-label-sm text-[11px] text-outline">Ex: 320g (mais leve que um café)</span>
+</div>
+</div>
+<!-- Seletor de Cores Afetivas do Seridó -->
+<div class="flex flex-col gap-2">
+<span class="font-label-lg text-label-lg text-on-surface">Cor ou Tom do Linho / Fio:</span>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+<!-- Cor 1 (Ativa) -->
+<label class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-high text-on-surface cursor-pointer ring-2 ring-primary">
+<span class="w-6 h-6 rounded-full bg-[#FAF7F0] shadow-sm flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+</span>
+<span class="font-label-md text-label-md font-bold">Linho Cru Natural</span>
+</label>
+<!-- Cor 2 -->
+<label class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface cursor-pointer">
+<span class="w-6 h-6 rounded-full bg-[#FFFFFF] shadow-sm"></span>
+<span class="font-label-md text-label-md font-medium">Branco Alvejado</span>
+</label>
+<!-- Cor 3 -->
+<label class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface cursor-pointer">
+<span class="w-6 h-6 rounded-full bg-[#E5D7C3] shadow-sm"></span>
+<span class="font-label-md text-label-md font-medium">Areia do Seridó</span>
+</label>
+<!-- Cor 4 -->
+<label class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface cursor-pointer">
+<span class="w-6 h-6 rounded-full bg-[#9F3C16] shadow-sm"></span>
+<span class="font-label-md text-label-md font-medium">Terracota Barro</span>
+</label>
+</div>
+</div>
+<!-- Tipo de Produção / Disponibilidade -->
+<div class="p-5 rounded-xl bg-surface-container-low flex flex-col gap-4">
+<span class="font-label-lg text-label-lg text-on-surface">Como essa peça será entregue?</span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Pronta-Entrega (Marcado) -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-3 border-2 border-primary">
+<div class="flex items-start gap-3">
+<input checked="" class="mt-1 w-5 h-5 text-primary accent-primary" id="disp-pronta" name="disponibilidade" type="radio"/>
+<div>
+<label class="font-label-md text-label-md font-bold text-on-surface block cursor-pointer" for="disp-pronta">Já está Pronta (Pronta-Entrega)</label>
+<p class="font-body-sm text-[13px] text-on-surface-variant mt-0.5 leading-snug">Guardada na oficina ou no Ponto de Apoio, pronta para despachar.</p>
+</div>
+</div>
+<div class="flex items-center gap-2 pl-8 pt-1">
+<label class="font-label-sm text-label-sm text-outline" for="qtd-estoque">Quantas peças prontas você tem?</label>
+<input class="w-16 h-9 px-2 rounded-lg bg-surface-container text-center font-bold text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary" id="qtd-estoque" max="50" min="1" type="number" value="1"/>
+</div>
+</div>
+<!-- Feita sob Encomenda -->
+<div class="p-4 rounded-xl bg-surface-container-lowest/80 flex flex-col justify-between gap-3 opacity-90 hover:opacity-100 transition-opacity">
+<div class="flex items-start gap-3">
+<input class="mt-1 w-5 h-5 text-primary accent-primary" id="disp-encomenda" name="disponibilidade" type="radio"/>
+<div>
+<label class="font-label-md text-label-md font-bold text-on-surface block cursor-pointer" for="disp-encomenda">Fazer Sob Encomenda</label>
+<p class="font-body-sm text-[13px] text-on-surface-variant mt-0.5 leading-snug">Você começa a tecer assim que a compradora confirmar o pedido.</p>
+</div>
+</div>
+<div class="flex items-center gap-2 pl-8 pt-1">
+<label class="font-label-sm text-label-sm text-outline" for="dias-producao">Prazo para tecer com calma:</label>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">15 dias úteis</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- STEP 4: Valor do Seu Trabalho (Preço Justo e Repasse Transparente) -->
+<section class="bg-surface-container-lowest p-6 sm:p-8 rounded-2xl shadow-sm flex flex-col gap-6">
+<div class="flex items-center gap-3">
+<span class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-label-md text-label-md font-bold">4</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Valor do Seu Trabalho e Repasse</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Aqui o valor do seu esforço é sagrado: você decide quanto quer receber limpo no Pix.</p>
+</div>
+</div>
+<!-- Campo de Valor Pretendido Líquido -->
+<div class="p-5 rounded-2xl bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="max-w-md">
+<label class="font-headline-sm text-headline-sm text-on-surface block" for="price-input">Quanto você quer receber na sua conta Pix por essa peça?</label>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 block">Esse é o seu Ganho Líquido. Cai direto na sua conta bancária sem nenhum desconto.</span>
+</div>
+<div class="flex items-center bg-surface-container-lowest px-4 py-2.5 rounded-2xl shadow-inner shrink-0">
+<span class="font-headline-sm text-headline-sm text-primary font-bold mr-2">R$</span>
+<input class="w-32 bg-transparent font-headline-md text-headline-md text-primary font-bold focus:outline-none" id="price-input" type="text" value="145,00"/>
+</div>
+</div>
+<!-- Demonstrativo Transparente de Preço Solidário -->
+<div class="p-6 rounded-2xl bg-secondary-container/40 text-on-secondary-container flex flex-col gap-4">
+<div class="flex items-center justify-between pb-3 border-b-0">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">price_check</span>
+<span class="font-label-lg text-label-lg font-bold">Demonstrativo Transparente de Preço</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+                Taxa Zero de Comissão
+              </span>
+</div>
+<div class="flex flex-col gap-2.5 font-body-sm text-body-sm">
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Ganho líquido direto de Dona Zefinha (Pix):</span>
+<span class="font-bold text-on-surface">R$ 145,00 (100% seu)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Taxa de intermediação da plataforma:</span>
+<span class="font-semibold text-secondary">R$ 0,00 (Custeado pela Cooperativa Picuí)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Embalagem de algodão cru &amp; ramo aromático:</span>
+<span class="font-semibold text-secondary">Grátis (Fornecido no Ponto de Apoio)</span>
+</div>
+<div class="flex items-center justify-between pt-3 border-t-0 bg-surface-container-lowest/60 p-3 rounded-xl mt-1">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Preço no site para quem compra no Brasil:</span>
+<span class="font-label-sm text-[11px] text-outline">Compradora apoia a renda e cultura paraibana</span>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">R$ 145,00</span>
+<span class="block font-label-sm text-[11px] text-secondary font-semibold">(R$ 137,75 no Pix à vista)</span>
+</div>
+</div>
+</div>
+<p class="font-body-sm text-[13px] text-on-surface-variant italic mt-1">
+              "Na Feito no Seridó valorizamos cada hora que você passou ao lado da janela criando beleza com suas mãos."
+            </p>
+</div>
+</section>
+</div>
+<!-- RIGHT COLUMN: Real-Time Catalog Card Preview & Municipal Point (lg:col-span-4) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md lg:sticky lg:top-24">
+<!-- Live Preview Header -->
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">visibility</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Prévia no Catálogo</span>
+</div>
+<span class="font-label-sm text-[11px] text-outline uppercase tracking-wider">Como o cliente verá</span>
+</div>
+<!-- Product Card Replica (Faithful to Public E-commerce Catalog) -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-md flex flex-col transition-all hover:shadow-xl">
+<!-- Card Image Container with Badges -->
+<div class="relative aspect-[4/5] bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Stunning handcrafted Brazilian lace runner made in Picuí Seridó, displayed beautifully folded over rustic wood with soft sunlight showing artisanal details." id="preview-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfMn7e1WnF8XihGH3lmBmnCXXZYCXINXQblVOtA27qsTn1ij1FjGIQsc-sQUfAI5YTsN_sNhokVoCQtunbbqUEAnBLw-yIez-OpgP0fDAYHVHuB-AbtP8bY9BLn_Fh7Mg_q4zNG_mnmQi39O3y5Mrgq8h3lIbb_Z0Ysg5-tNLT6hp9EWxJbYZ43Wbr_n3H6AmCA3s2d3PsLTGjB9vqbQ4cQr8IvJiDriyO1I1IikfLq4r4b4kEH5HUyA"/>
+<!-- Origin Chip (Top-Left) -->
+<div class="absolute top-3 left-3 flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed/90 backdrop-blur-sm text-on-secondary-fixed font-label-sm text-label-sm font-bold shadow-sm">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Picuí • PB</span>
+</div>
+<!-- Handmade Stamp (Top-Right) -->
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold shadow-sm">
+              Feito à Mão
+            </div>
+<!-- Material Badge Overlay (Bottom-Left) -->
+<div class="absolute bottom-3 left-3 px-2 py-0.5 rounded-md bg-inverse-surface/75 text-inverse-on-surface font-label-sm text-[10px] backdrop-blur-sm">
+              100% Linho Puro • 140cm x 45cm
+            </div>
+</div>
+<!-- Card Content Body -->
+<div class="p-5 flex flex-col gap-3">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Portrait of Dona Zefinha, smiling mature Brazilian artisan master lace maker in her colorful Seridó atelier wearing traditional linen garments." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpq6OvkF8CvapGfKz9_bz1Sh5__jrKsL27rMEx1m1fiIS23HWVRFws5nd8OrZz0Dpk5WIHrGzVDHshf7oAA8uDMnMoDA5lL53G8LKtx8ljt8Z4n5om3w9NmJ3YqmphWWxphUkdsOENsPGj7wsfr-ZBmFltqZ_zUNfd4dVCIhVML6r0bw5FrmARHocSpoO-3DH-tkQmktGrAZEDxbdzX0yBG2xOrtmnL51yNDZxMh3T1PUkQuIxSnm43w"/>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Por Dona Zefinha • Bairro Limeira</span>
+</div>
+<h3 class="font-headline-sm text-[18px] text-on-surface line-clamp-2 leading-snug" id="preview-title">
+              Caminho de Mesa em Renda Labirinto Ponto Palito
+            </h3>
+<div class="flex items-baseline justify-between pt-2 border-t-0">
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-outline uppercase tracking-wider">Valor da Peça</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold leading-none" id="preview-price">R$ 145,00</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-[11px] text-secondary font-bold">1 unidade pronta</span>
+<span class="font-label-sm text-[10px] text-outline">Envio via Picuí</span>
+</div>
+</div>
+<button class="w-full h-11 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-2 shadow-sm pointer-events-none mt-1" type="button">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Adicionar à Sacola</span>
+</button>
+</div>
+</div>
+<!-- Municipal Collective Support Box -->
+<div class="p-5 rounded-2xl bg-surface-container flex flex-col gap-3 shadow-sm">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block">Ponto de Apoio Central de Picuí</span>
+<p class="font-body-sm text-[13px] text-on-surface-variant leading-relaxed mt-1">
+                Ao salvar, Mariana do Ponto de Apoio irá conferir a peça com você. Se precisar, você pode usar a balança comunitária na Rua Cel. José Pereira para conferir o peso e pegar a etiqueta do Selo de Origem.
+              </p>
+</div>
+</div>
+<a class="inline-flex items-center gap-1.5 text-secondary hover:text-on-secondary-container font-label-sm text-label-sm font-semibold pl-11" data-path="selo-origem-doc" href="#">
+<span>Regulamento do Selo de Origem Seridó Oriental</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Action Bar (Fixed / Persistent Highlight Bar) -->
+<div class="sticky bottom-0 z-30 bg-surface/95 backdrop-blur-md py-4 px-margin lg:px-margin-desktop shadow-[0_-4px_16px_rgba(32,26,24,0.08)] mt-space-xl">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+<!-- Notification Checkbox -->
+<label class="flex items-center gap-2.5 cursor-pointer text-on-surface select-none">
+<input checked="" class="w-5 h-5 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-label-md text-label-md">Avisar compradoras que já me favoritaram quando esta peça entrar no ar</span>
+</label>
+<!-- Action Buttons -->
+<div class="flex items-center gap-3 w-full sm:w-auto">
+<button class="flex-1 sm:flex-none px-5 py-3 rounded-xl bg-surface-container-high text-on-surface hover:bg-surface-container font-label-lg text-label-lg font-semibold transition-colors" type="button">
+          Salvar como Rascunho
+        </button>
+<button class="flex-1 sm:flex-none px-7 py-3 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg font-bold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2" id="btn-submit" type="button">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Publicar Peça no Catálogo</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Micro-Interactions Script for Live Preview Update -->
+<script>
+    (function() {
+      const nameInput = document.getElementById('item-name');
+      const previewTitle = document.getElementById('preview-title');
+      const priceInput = document.getElementById('price-input');
+      const previewPrice = document.getElementById('preview-price');
+      const btnSubmit = document.getElementById('btn-submit');
+
+      if (nameInput && previewTitle) {
+        nameInput.addEventListener('input', function(e) {
+          previewTitle.textContent = e.target.value.trim() || 'Nome da Peça Artesanal';
+        });
+      }
+
+      if (priceInput && previewPrice) {
+        priceInput.addEventListener('input', function(e) {
+          const val = e.target.value.trim();
+          previewPrice.textContent = val.startsWith('R$') ? val : 'R$ ' + val;
+        });
+      }
+
+      // Technique Chips toggling
+      const techniqueChips = document.querySelectorAll('.technique-chip');
+      techniqueChips.forEach(chip => {
+        chip.addEventListener('click', function() {
+          techniqueChips.forEach(c => {
+            c.classList.remove('active', 'bg-primary-fixed', 'text-on-primary-fixed', 'shadow-sm');
+            c.classList.add('bg-surface-container', 'text-on-surface');
+            const iconBox = c.querySelector('div:first-child');
+            if (iconBox) {
+              iconBox.className = 'w-9 h-9 rounded-lg bg-surface-container-highest text-on-surface flex items-center justify-center shrink-0';
+            }
+          });
+          this.classList.add('active', 'bg-primary-fixed', 'text-on-primary-fixed', 'shadow-sm');
+          this.classList.remove('bg-surface-container', 'text-on-surface');
+          const activeIconBox = this.querySelector('div:first-child');
+          if (activeIconBox) {
+            activeIconBox.className = 'w-9 h-9 rounded-lg bg-primary text-on-primary flex items-center justify-center shrink-0';
+          }
+        });
+      });
+
+      if (btnSubmit) {
+        btnSubmit.addEventListener('click', function() {
+          const origText = this.innerHTML;
+          this.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">sync</span><span>Publicando no Seridó...</span>';
+          setTimeout(() => {
+            this.innerHTML = '<span class="material-symbols-outlined text-[20px]">done_all</span><span>Peça Cadastrada com Sucesso!</span>';
+            this.classList.remove('bg-primary');
+            this.classList.add('bg-secondary');
+          }, 1000);
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>
