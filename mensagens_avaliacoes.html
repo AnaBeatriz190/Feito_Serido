@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><title>Espaço da Produtora - Feito no Seridó</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-secondary": "#ffffff",
+          "surface-bright": "#fff8f6",
+          "on-surface-variant": "#57423b",
+          "on-background": "#201a18",
+          "surface-container-lowest": "#ffffff",
+          "on-surface": "#201a18",
+          "surface-tint": "#a23e18",
+          "secondary-fixed": "#c7edbd",
+          "primary-fixed": "#ffdbcf",
+          "on-error-container": "#93000a",
+          "primary-fixed-dim": "#ffb59c",
+          "on-tertiary-container": "#fffbff",
+          "on-primary": "#ffffff",
+          "on-secondary-container": "#4b6d46",
+          "surface": "#fff8f6",
+          "inverse-surface": "#352f2d",
+          "error": "#ba1a1a",
+          "secondary-container": "#c7edbd",
+          "on-tertiary": "#ffffff",
+          "surface-container": "#f7ebe8",
+          "on-primary-container": "#fffbff",
+          "on-secondary-fixed-variant": "#2e4e2b",
+          "on-tertiary-fixed": "#291800",
+          "primary": "#9f3c16",
+          "tertiary-container": "#9f6a0b",
+          "tertiary-fixed-dim": "#fcba5b",
+          "inverse-primary": "#ffb59c",
+          "secondary-fixed-dim": "#abd0a3",
+          "outline": "#8a726a",
+          "on-secondary-fixed": "#032104",
+          "surface-variant": "#ece0dd",
+          "secondary": "#466641",
+          "surface-container-highest": "#ece0dd",
+          "surface-container-high": "#f2e6e2",
+          "tertiary": "#7f5300",
+          "on-primary-fixed": "#390c00",
+          "on-error": "#ffffff",
+          "surface-container-low": "#fdf1ed",
+          "inverse-on-surface": "#faeeeb",
+          "on-primary-fixed-variant": "#822801",
+          "surface-dim": "#e3d8d4",
+          "background": "#fff8f6",
+          "tertiary-fixed": "#ffddb4",
+          "on-tertiary-fixed-variant": "#633f00",
+          "outline-variant": "#dec0b7",
+          "error-container": "#ffdad6",
+          "primary-container": "#bf542c"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin": "1rem",
+          "margin-tablet": "2rem",
+          "space-xl": "2.5rem",
+          "space-md": "1rem",
+          "margin-desktop": "3rem",
+          "space-sm": "0.5rem",
+          "gutter-desktop": "1.5rem",
+          "gutter": "1rem",
+          "space-xs": "0.25rem",
+          "space-lg": "1.5rem"
+        },
+        "fontFamily": {
+          "label-sm": ["Plus Jakarta Sans"],
+          "body-lg": ["Plus Jakarta Sans"],
+          "label-md": ["Plus Jakarta Sans"],
+          "label-lg": ["Plus Jakarta Sans"],
+          "body-md": ["Plus Jakarta Sans"],
+          "display-lg": ["Playfair Display"],
+          "headline-lg": ["Playfair Display"],
+          "headline-sm": ["Playfair Display"],
+          "body-sm": ["Plus Jakarta Sans"],
+          "display-lg-mobile": ["Playfair Display"],
+          "headline-lg-mobile": ["Playfair Display"],
+          "headline-md": ["Playfair Display"]
+        },
+        "fontSize": {
+          "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700"}],
+          "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+          "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+          "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+          "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+          "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+          "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+          "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "headline-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "0", "fontWeight": "600"}],
+          "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-xl shadow-[0_2px_12px_rgba(32,26,24,0.06)]"><div class="h-16 px-margin lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-3 shrink-0" data-path="painel-artesa" href="#"><img alt="Feito no Seridó Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UpOLnYeCV5tFQw4WoaF16XFaKh3DSoiob6OYjmUie3YoOOTLYl1ntFFpeuzV8wBt8pttb9x62g2mj6vpnp51vlJEuP4kAHgkz8aljHNTn--EAq_KOde3md_uBPeCtdWONTaYiuNI88Vs5ZMGE7tY9-yZTJFbc0HPRcXKscIl2OFOfBomnB6LryTQ0gjjzDxSv8Aayz81zzwpo_ZmREwaxsXD84gcMAnSVoWooDha_ZaFUtGnou53vxrgqt"/><div class="flex flex-col"><span class="font-headline-sm text-[18px] text-primary leading-tight">Feito no Seridó</span><span class="font-label-sm text-[10px] text-secondary font-semibold uppercase tracking-wider">Portal da Produtora</span></div></a><div class="hidden md:flex items-center gap-2 pl-space-md border-l border-surface-container"><span class="w-2.5 h-2.5 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Oficina Conectada • Picuí / PB</span></div></div><div class="flex items-center gap-space-sm sm:gap-space-md shrink-0"><a class="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container-high text-primary hover:bg-surface-container font-label-md text-label-md transition-colors" data-path="loja-dona-zefinha" href="#"><span class="material-symbols-outlined text-[18px]">storefront</span><span>Ver Minha Loja Pública</span></a><div class="flex items-center gap-2 pl-space-sm"><div class="relative flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-full"><img alt="Dona Zefinha Foto" class="w-8 h-8 rounded-full object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNv975xR_-4C4B3agFJcrxSI5xuLR3AHltISP-EM5zBI4sn8AMhxGbv9tJoklGjxrd5sP1Qgiy58Cz1JkY3VZsAwPdZNLIi5wojAMheIIKrC56_xHTO-uc0cRnwIfBV2VGfPjVknGcQiHecJhQEtKLuf-_Gvfl1Ey152UGCAkjgL6W3jrBpqsPrsEVAi_Nz-MrMYBXR8AV7LAjXC7hEkNM94uEe6QC9zWGK__4veChrPFuGaPH5hKVmQ"/><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-bold leading-tight">Dona Zefinha</span><span class="font-label-sm text-[10px] text-outline leading-tight">Ateliê Bairro Limeira, Picuí - PB</span></div><span class="material-symbols-outlined text-outline text-[18px] ml-1">expand_more</span></div></div></div></div></header><div class="flex w-full min-h-screen"><aside class="w-64 fixed top-16 bottom-0 left-0 z-40 bg-surface-container-low flex flex-col justify-between p-space-md overflow-y-auto"><div class="flex flex-col gap-space-md"><div class="p-space-sm rounded-xl bg-surface-container"><span class="font-label-sm text-[10px] uppercase font-bold text-secondary tracking-wider block mb-1">Artesã Credenciada</span><p class="font-headline-sm text-headline-sm text-on-surface text-[15px] leading-tight">Ateliê Bairro Limeira</p><span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Renda de Labirinto &amp; Crivo</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-surface-container text-primary font-bold shadow-sm"><a class="px-space-md py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container/60 hover:text-on-surface transition-colors whitespace-nowrap" data-path="painel-artesa" href="#">Visão Geral</a><a class="px-space-md py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container/60 hover:text-on-surface transition-colors whitespace-nowrap" data-path="pedidos-despachos" href="#">Meus Pedidos &amp; Despachos</a><a class="px-space-md py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container/60 hover:text-on-surface transition-colors whitespace-nowrap" data-path="catalogo-pecas" href="#">Catálogo de Peças</a><a class="px-space-md py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container/60 hover:text-on-surface transition-colors whitespace-nowrap" data-path="repasses-financeiro" href="#">Repasses &amp; Financeiro</a><a class="px-space-md py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container/60 hover:text-on-surface transition-colors whitespace-nowrap" data-path="mensagens-compradoras" href="#">Mensagens das Compradoras</a><a class="px-space-md py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container/60 hover:text-on-surface transition-colors whitespace-nowrap" data-path="selo-origem-picui" href="#">Selo de Origem Picuí</a></nav></div><div class="flex flex-col gap-2 pt-space-md border-t border-surface-container"><a class="flex items-center justify-between px-3 py-2 rounded-lg bg-surface text-on-surface-variant hover:text-primary transition-colors text-left" data-path="ajuda-artesa" href="#"><span class="font-label-sm text-label-sm font-semibold">Dúvidas com Envio</span><span class="material-symbols-outlined text-[16px]">support</span></a><a class="font-label-sm text-label-sm text-outline hover:text-error transition-colors px-3 py-1" data-path="sair-painel" href="#">Sair do Painel</a></div></aside><main class="flex-1 pt-16 pl-64 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Script para marcar menu ativo no App Shell -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll("aside nav a");
+      links.forEach((link) => {
+        if (link.getAttribute("data-path") === "mensagens-compradoras") {
+          link.className =
+            "px-space-md py-2.5 rounded-xl font-label-lg text-label-lg bg-surface-container text-primary font-bold shadow-sm whitespace-nowrap flex items-center justify-between";
+          link.innerHTML = `<span>Mensagens das Compradoras</span><span class="w-2 h-2 rounded-full bg-primary"></span>`;
+        }
+      });
+    });
+  </script>
+<!-- Container Geral da Página -->
+<div class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl flex flex-col gap-space-xl">
+<!-- 1. TOPO DA PÁGINA (Header Editorial Afetivo) -->
+<header class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<!-- Breadcrumb e Selo Afetivo -->
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-label-md text-label-md text-outline">Portal da Produtora</span>
+<span class="text-outline-variant text-label-md">/</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Mensagens &amp; Avaliações Afetivas</span>
+</div>
+<div class="inline-flex items-center gap-2 self-start bg-secondary-container/60 text-on-secondary-container px-3 py-1 rounded-full mt-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">favorite</span>
+<span class="font-label-sm text-label-sm tracking-wide uppercase font-bold">
+            Carinho do Brasil Inteiro • Energia que Alimenta o Bastidor
+          </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-semibold mt-1">
+          Mensagens &amp; Elogios Afetivos das Compradoras
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Veja como os caminhos de mesa e toalhas bordadas no Bairro Limeira transformaram lares de São Paulo a Brasília. 
+          Responda com um toque de voz ou confira os áudios e fotos de agradecimento com cheiro de caatinga.
+        </p>
+</div>
+<!-- Ações de Cabeçalho -->
+<div class="flex items-center gap-3 shrink-0">
+<button class="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">share</span>
+<span>WhatsApp da Família</span>
+</button>
+<button class="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-primary text-on-primary hover:bg-primary-container transition-colors shadow-sm font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px]">workspace_premium</span>
+<span>Mural de Orgulho da Oficina</span>
+</button>
+</div>
+</header>
+<!-- 2. CARDS DE DESTAQUE E ESTATÍSTICAS AFETIVAS (4 cards em linha) -->
+<section aria-label="Estatísticas afetivas" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Card 1: Nota Média -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline uppercase font-semibold">Nota Média Geral</span>
+<span class="p-2 rounded-lg bg-surface-container-low text-primary">
+<span class="material-symbols-outlined text-[20px]">grade</span>
+</span>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface leading-none">5.0</span>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            48 avaliações recebidas • 100% de pura aprovação
+          </p>
+</div>
+</div>
+<!-- Card 2: Cidades Alcançadas -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline uppercase font-semibold">Cidades Alcançadas</span>
+<span class="p-2 rounded-lg bg-surface-container-low text-secondary">
+<span class="material-symbols-outlined text-[20px]">pin_drop</span>
+</span>
+</div>
+<div>
+<span class="font-headline-lg text-headline-lg text-on-surface leading-none block">14 Estados</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            De João Pessoa e Campina Grande a SP, RJ, Curitiba e DF
+          </p>
+</div>
+</div>
+<!-- Card 3: Encanto Especial -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline uppercase font-semibold">O Maior Encanto</span>
+<span class="p-2 rounded-lg bg-surface-container-low text-tertiary">
+<span class="material-symbols-outlined text-[20px]">local_florist</span>
+</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight block">Cheiro de Alecrim Seco</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Mencionado em 39 bilhetes como surpresa mágica da caixa
+          </p>
+</div>
+</div>
+<!-- Card 4: Respostas e Afeto Pendente -->
+<div class="bg-surface-container p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold uppercase">Respostas com Bênção</span>
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">
+            2
+          </span>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-primary leading-none">46</span>
+<span class="font-label-lg text-label-lg text-on-surface-variant">/ 48 enviadas</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-1 font-medium">
+            2 novas mensagens aguardando o seu carinho
+          </p>
+</div>
+</div>
+</section>
+<!-- 3. FILTROS E ABAS DE NAVEGAÇÃO -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container-low p-space-md rounded-xl">
+<!-- Abas de Navegação -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 lg:pb-0">
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold whitespace-nowrap shadow-sm" type="button">
+          Todas as Mensagens (48)
+        </button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md whitespace-nowrap flex items-center gap-2 transition-colors" type="button">
+<span>Novas / Não Respondidas</span>
+<span class="w-5 h-5 rounded-full bg-primary text-on-primary text-[10px] flex items-center justify-center font-bold">2</span>
+</button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md whitespace-nowrap transition-colors" type="button">
+          Com Fotos na Mesa (18)
+        </button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md whitespace-nowrap transition-colors" type="button">
+          Mensagens em Áudio (5)
+        </button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md whitespace-nowrap transition-colors" type="button">
+          Clientes Especiais (12)
+        </button>
+</div>
+<!-- Barra de Busca & Ordenação -->
+<div class="flex items-center gap-3">
+<div class="relative flex-1 sm:w-72">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="w-full pl-9 pr-3 py-2 bg-surface rounded-lg text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Buscar por cliente ou cidade..." type="text"/>
+</div>
+<select class="px-3 py-2 bg-surface text-on-surface font-label-md text-label-md rounded-lg focus:outline-none focus:ring-2 focus:ring-primary cursor-pointer">
+<option>Mais recentes primeiro</option>
+<option>Mais curtidas pela comunidade</option>
+<option>Com fotos anexadas</option>
+</select>
+</div>
+</div>
+<!-- ÁREA PRINCIPAL: DUAS COLUNAS (Feed de Avaliações + Sidebar de Afeto) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- COLUNA PRINCIPAL: LISTA DE AVALIAÇÕES AFETIVAS (8 Colunas) -->
+<main class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- CARD 1: NOVA / DESTAQUE COM FOTOS -->
+<article class="bg-surface-container-lowest p-space-lg md:p-space-xl rounded-xl shadow-md flex flex-col gap-space-md relative overflow-hidden">
+<!-- Tag de Destaque Superior -->
+<div class="flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                Mensagem Nova • Chegou Ontem
+              </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm font-semibold">
+                Cliente Habitual (3ª compra)
+              </span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Pedido #FNS-2025-0842</span>
+</div>
+<!-- Header da Compradora -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary font-headline-sm text-headline-sm font-bold">
+                M
+              </div>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                  Maria Alice Vasconcelos de Medeiros
+                </h2>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-secondary">location_on</span>
+<span>João Pessoa - PB, Bairro Bessa</span>
+<span class="text-outline-variant">•</span>
+<span>Ontem às 17:34</span>
+</div>
+</div>
+</div>
+<!-- Estrelas -->
+<div class="flex flex-col items-end">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Nota 5.0 • Encantada</span>
+</div>
+</div>
+<!-- Resumo das Peças Compradas -->
+<div class="bg-surface-container-low px-4 py-2.5 rounded-lg flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">inventory_2</span>
+<span class="font-label-sm text-label-sm text-on-surface">
+<strong>Peças:</strong> Caminho de Mesa em Renda Labirinto Ponto Palito (1,40m) + 2x Toalhas de Lavabo Mandacaru
+            </span>
+</div>
+<!-- Conteúdo do Depoimento Emocionante -->
+<div class="bg-surface-bright p-space-md rounded-xl">
+<p class="font-headline-sm text-headline-sm text-primary italic mb-2">
+              “Emocionada com tanto capricho e pureza de mãos!”
+            </p>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              Dona Zefinha querida, a encomenda acabou de chegar aqui no Bessa em João Pessoa! Quando abri a caixa, 
+              o cheiro de alecrim seco da Caatinga perfumou minha sala inteira. O bilhete escrito à mão me fez chorar de 
+              emoção genuína. O labirinto é a coisa mais perfeita que já vi na vida, dá para sentir cada dia de trabalho 
+              dedicado da senhora. Já coloquei na mesa de jantar para o almoço de domingo da família toda reunir. Que Deus 
+              abençoe infinitamente suas mãos de ouro e a acolhida doce de Picuí!
+            </p>
+</div>
+<!-- Fotos Anexadas pela Cliente -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">
+              Fotos enviadas por Maria Alice:
+            </span>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+<div class="relative rounded-lg overflow-hidden h-36 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A warm sunlit dining table in a bright coastal Brazilian apartment, displaying a fine handmade white lace runner crafted with intricate labyrinth needlework, alongside elegant artisanal ceramic plates and wildflowers in an earthy terracotta vase." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXdk7r1oyyle6p1JuksifXkYvp5hxQsllEgZ7rdTWbzfTuzcui43GCpNz5l0n9Jckhjv8S2iVoNiOeik9f5xqCTcQ2yQIIlOXyWW1w2o44flb9lRRQOUK38UvgCkLf273KyfemnEyZ5RcGZatWrvC0gzuksKKEe_oY1Cf6UaShe8my1wy8-Yqs_DSisvQzH-anHmCg6cgpmbKgXX45tWiVworfUGQGlQ15OY4_9LVuHw5TTQvkQ4Cr8Q"/>
+<span class="absolute bottom-2 left-2 bg-on-surface/75 text-on-primary text-[10px] px-2 py-0.5 rounded backdrop-blur-sm font-label-sm">
+                  Mesa de Domingo
+                </span>
+</div>
+<div class="relative rounded-lg overflow-hidden h-36 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close-up macro photograph of a handwritten heartfelt letter in brown sepia ink resting beside an authentic dried wild Caatinga rosemary sprig on a textured natural ecru cotton linen cloth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl2xU9qu1mWZP-bQ61IWfkTvqoEvdF-Fl8fTJw-xZ7dvhC9X0UzsDLSeOKILLnj8M6O95dw3r5TKCC0Na3UfUWXIx49B0JHsGJOcpqc5pQeVf-jWQn3hWiNj4pCDK0mNATVloHXWsS9P-mhszoRa4c2-mBq0G_aTyYiwexD5t5DUuFEZc-HqFkP8omgYzerx5fMfKs3xsHYUpTUjNvrwOebL0jSx3jn-ABcSACojowpZ7t52HVhgR6gQ"/>
+<span class="absolute bottom-2 left-2 bg-on-surface/75 text-on-primary text-[10px] px-2 py-0.5 rounded backdrop-blur-sm font-label-sm">
+                  Bilhete Guardado
+                </span>
+</div>
+<div class="hidden sm:flex flex-col justify-center items-center rounded-lg bg-surface-container-high p-4 text-center">
+<span class="material-symbols-outlined text-[28px] text-secondary mb-1">image_search</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Ver em tela cheia</span>
+<span class="text-[11px] text-outline font-label-sm">Alta resolução</span>
+</div>
+</div>
+</div>
+<!-- Módulo de Resposta Afetiva de Dona Zefinha -->
+<div class="mt-space-sm p-space-md rounded-xl bg-surface-container-high flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">reply</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">
+                  Sua Resposta para Maria Alice
+                </span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">
+                Aparece na sua vitrine pública
+              </span>
+</div>
+<!-- Sugestões Rápidas de Afeto (Chips de 1 clique) -->
+<div class="flex flex-wrap gap-2 pt-1">
+<button class="px-3 py-1 rounded-full bg-surface text-on-surface hover:bg-surface-container-highest text-label-sm font-label-sm transition-colors" type="button">
+                🙏 "Deus abençoe seu lar e sua família"
+              </button>
+<button class="px-3 py-1 rounded-full bg-surface text-on-surface hover:bg-surface-container-highest text-label-sm font-label-sm transition-colors" type="button">
+                🌿 "O alecrim foi colhido aqui no meu quintal"
+              </button>
+<button class="px-3 py-1 rounded-full bg-surface text-on-surface hover:bg-surface-container-highest text-label-sm font-label-sm transition-colors" type="button">
+                ❤️ "Minha neta Mariana leu para mim e chorei"
+              </button>
+</div>
+<!-- Campo de Texto / Rascunho -->
+<textarea class="w-full p-3 bg-surface rounded-lg text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary resize-none" placeholder="Digite aqui ou use o microfone ao lado para ditar com a sua voz..." rows="3">Minha filha Maria Alice, meu coração de mãe e rendeira se enche de alegria ao saber que o pano encontrou uma casa de tanta paz! O alecrim colhi fresquinho no quintal da Limeira. Que as refeições no domingo tragam sempre saúde e união pra todos vocês. Um abraço bem forte daqui de Picuí!</textarea>
+<!-- Botões de Ação de Envio -->
+<div class="flex flex-wrap items-center justify-between gap-3 pt-1">
+<div class="flex items-center gap-2">
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">mic</span>
+<span>Gravar Áudio de Resposta</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface text-on-surface-variant hover:text-secondary transition-colors font-label-sm text-label-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">chat</span>
+<span>Enviar no WhatsApp</span>
+</button>
+</div>
+<button class="px-5 py-2.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md font-semibold transition-colors shadow-sm" type="button">
+                Publicar Resposta Afetiva
+              </button>
+</div>
+</div>
+</article>
+<!-- CARD 2: DEPOIMENTO EM ÁUDIO (Player e Transcrição) -->
+<article class="bg-surface-container-lowest p-space-lg md:p-space-xl rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">record_voice_over</span>
+              Mensagem com Áudio de Voz
+            </span>
+<span class="font-label-sm text-label-sm text-outline">Pedido #FNS-2025-0810 • Entregue em SP</span>
+</div>
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-secondary font-headline-sm text-headline-sm font-bold">
+                B
+              </div>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                  Beatriz Guimarães
+                </h2>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-secondary">location_on</span>
+<span>São Paulo - SP, Jardins</span>
+<span class="text-outline-variant">•</span>
+<span>14 de Outubro</span>
+</div>
+</div>
+</div>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<!-- Peça Adquirida -->
+<div class="font-label-sm text-label-sm text-on-surface-variant">
+<strong>Adquiriu:</strong> Kit Renda de Labirinto Artesanal Completo (3 Peças para Sala de Estar)
+          </div>
+<!-- Player de Áudio Simulado Estilizado -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col sm:flex-row items-center gap-space-md">
+<button class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm hover:scale-105 transition-transform" type="button">
+<span class="material-symbols-outlined text-[26px]">play_arrow</span>
+</button>
+<div class="flex-1 w-full flex flex-col gap-1">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="font-semibold text-on-surface">Ouvir voz de agradecimento da Beatriz</span>
+<span class="text-outline">0:42</span>
+</div>
+<!-- Onda de Áudio SVG minimalista -->
+<div class="h-6 flex items-center gap-1 w-full">
+<span class="w-1 h-3 bg-primary rounded-full"></span>
+<span class="w-1 h-5 bg-primary rounded-full"></span>
+<span class="w-1 h-2 bg-primary rounded-full"></span>
+<span class="w-1 h-6 bg-primary rounded-full"></span>
+<span class="w-1 h-4 bg-primary rounded-full"></span>
+<span class="w-1 h-5 bg-primary rounded-full"></span>
+<span class="w-1 h-3 bg-primary rounded-full"></span>
+<span class="w-1 h-6 bg-outline-variant rounded-full"></span>
+<span class="w-1 h-4 bg-outline-variant rounded-full"></span>
+<span class="w-1 h-2 bg-outline-variant rounded-full"></span>
+<span class="w-1 h-5 bg-outline-variant rounded-full"></span>
+<span class="w-1 h-3 bg-outline-variant rounded-full"></span>
+<span class="w-1 h-2 bg-outline-variant rounded-full"></span>
+<span class="w-1 h-4 bg-outline-variant rounded-full"></span>
+<span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+</div>
+</div>
+<span class="text-label-sm font-label-sm text-secondary bg-surface px-2.5 py-1 rounded-full whitespace-nowrap">
+              Áudio de Alta Qualidade
+            </span>
+</div>
+<!-- Transcrição do Áudio -->
+<blockquote class="pl-4 border-l-2 border-primary/40 font-body-md text-body-md text-on-surface-variant italic">
+            “Oi Dona Zefinha, aqui é a Beatriz de São Paulo! Estou gravando porque só escrever não seria suficiente... 
+            todo arquiteto e amigo que entra no meu apartamento para pra perguntar onde consegui essa verdadeira escultura têxtil. 
+            Saber que foi feita aí no sertão paraibano com comércio digno e justo encheu nossa casa de alma. 
+            Um abraço bem apertado pra senhora e pra Mariana do Ponto de Apoio que tirou todas as dúvidas!”
+          </blockquote>
+<!-- Histórico de Resposta Já Concluída -->
+<div class="flex items-center gap-2 p-3 rounded-lg bg-surface-container-low text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span>Respondido carinhosamente por Dona Zefinha via áudio no WhatsApp em 14/Out</span>
+</div>
+</article>
+<!-- CARD 3: COM FOTO DA SALA DE JANTAR EM RECIFE -->
+<article class="bg-surface-container-lowest p-space-lg md:p-space-xl rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Pedido #FNS-2025-0821 • Recife - PE</span>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary font-headline-sm text-headline-sm font-bold">
+              P
+            </div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                Patrícia Duarte
+              </h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Boa Viagem, Recife - PE</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            A renda da Dona Zefinha é puro patrimônio vivo do Nordeste! A precisão milimétrica de cada ponto palito é inacreditável. 
+            O sachê de alecrim da caatinga veio intacto e minha mãe de 82 anos reconheceu na hora o cheiro do nosso Seridó. 
+            Parabéns à cooperativa de Picuí pelo primoroso carinho e rastreabilidade na entrega.
+          </p>
+<div class="w-full h-56 rounded-xl overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Editorial warm-toned interior photo of a grand Brazilian breakfast table adorned with a long handmade openwork Serido lace table runner, clay coffee cups, tropical fruits, and natural sunlight pouring through wooden shutters." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-y_A5dqSZAcEROt8t4vMPMiJze4dGFliRt8dl7h7E8werwtRN03KjHNDDRu78pyjASIn3cjlfPZ-xJWOBlGb-9cNBsZwIozkbNapItSJZG5XR2VoCQhzhuFiY2h3BmyfOKMvTOPKV0FfKs2T4WKF8sRWCaeG-vVBt3WXHQfK9ZIPPqUlgWoylvdsiqV1bhoxPFMNCTn5QF-1pM8vrOIDeazL_tyvUufJIPfsiMOYpReer4zupD7N5Bw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 via-transparent to-transparent flex items-end p-4">
+<span class="font-label-sm text-label-sm text-on-primary font-semibold">
+                Foto enviada por Patrícia: Mesa posta para o café matinal em família
+              </span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<button class="font-label-md text-label-md text-primary font-semibold hover:underline flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Ver resposta pública de Dona Zefinha</span>
+</button>
+<span class="text-label-sm font-label-sm text-outline">12 de Outubro</span>
+</div>
+</article>
+<!-- CARD 4: MENSAGEM AFETIVA DE BRASÍLIA -->
+<article class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Pedido #FNS-2025-0785 • Brasília - DF</span>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-on-surface font-headline-sm text-headline-sm font-bold">
+              L
+            </div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                Lucas Meira
+              </h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Asa Norte, Brasília - DF</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            Presenteei minha avó que é paraibana e mora aqui no Distrito Federal há mais de 40 anos. 
+            Ela chorou de saudade da terra natal ao tocar no ponto crivo tão bem arrematado. 
+            Dona Zefinha, a senhora não faz apenas artesanato: seu trabalho cura saudades e aproxima gerações!
+          </p>
+<div class="flex items-center gap-2 p-3 rounded-lg bg-surface-container-low text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-secondary">favorite</span>
+<span>Respondido em 08/Out: "Diga à sua avó que o Seridó sempre espera por ela!"</span>
+</div>
+</article>
+</main>
+<!-- 5. COLUNA LATERAL DIREITA: SIDEBAR DE AFETO & APOIO COMUNITÁRIO (4 Colunas) -->
+<aside class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- CARD 1: MURAL DAS PALAVRAS QUE MAIS TOCAM (Nuvem de Sentimentos) -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">format_quote</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+              Palavras que Mais Tocam
+            </h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Os sentimentos e termos mais frequentes nos bilhetes recebidos em Picuí:
+          </p>
+<div class="flex flex-wrap gap-2 pt-1">
+<span class="px-3 py-1.5 rounded-full bg-primary/10 text-primary font-label-md text-label-md font-bold">
+              Cheirinho de Alecrim (39)
+            </span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+              Mãos de Ouro (34)
+            </span>
+<span class="px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md font-semibold">
+              Amor de Vó (28)
+            </span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+              Obra de Arte (25)
+            </span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+              Paciência Infinita (21)
+            </span>
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+              Picuí / Paraíba (42)
+            </span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+              Resistência Sertaneja (19)
+            </span>
+</div>
+</section>
+<!-- CARD 2: DICAS PRÁTICAS PARA DONA ZEFINHA -->
+<section class="bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">lightbulb</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+              Como Responder Fácil
+            </h2>
+</div>
+<ul class="flex flex-col gap-3 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">mic</span>
+<span><strong>Prefere falar a digitar?</strong> Aperte no ícone de microfone. Mariana do Ponto de Apoio transcreve caso precise.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">verified</span>
+<span><strong>Orgulho na Loja:</strong> Suas respostas carinhosas aparecem na vitrine online, incentivando novas compradoras de todo o país.</span>
+</li>
+</ul>
+</section>
+<!-- CARD 3: PLANTÃO DO PONTO DE APOIO (Mariana) -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of Mariana, a welcoming young Brazilian community cooperative worker from the Serido region, smiling warmly in a rustic artisan center." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYcPFzyjqspji-gr6NMlELw2X4Xnpr_cEXApT3HpZxm_RYDASFVVF8cq0R1Tzi5NlOD0DgzKKQRLnCUOdxtHY4ufhvhxGnJet54nv0U_UG_6rCkJQ6g75MGnizkmrL-HsxTusU3jkOfMxk9CY98gWB6t7Pvrg5DScofHJ36EHNCm60Y3QkGbIZHVgCcEOrBS0u1SPVOL8l_f0DEZEd5FdnGtjiLtJ4CnFt_FwdLEyEr7ii6wSLDOtXyg"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Online no Ponto Central</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                Mariana (Ponto de Apoio)
+              </h2>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Mariana está disponível em Picuí para ler mensagens longas com Dona Zefinha ou imprimir as fotos das mesas das clientes para o mural da oficina.
+          </p>
+<button class="w-full py-2.5 px-4 rounded-xl bg-secondary text-on-secondary hover:bg-secondary/90 transition-colors flex items-center justify-center gap-2 font-label-md text-label-md font-semibold" type="button">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Chamar Mariana no WhatsApp</span>
+</button>
+</section>
+<!-- CARD 4: LIVRO DE AFETOS IMPRESSO -->
+<section class="bg-primary-fixed/30 p-space-lg rounded-xl flex flex-col gap-space-md">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[24px]">menu_book</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+              Livro de Afetos Impresso
+            </h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+            A cada 50 mensagens registradas, a Cooperativa e a Prefeitura de Picuí imprimem gratuitamente um caderno artesanal encadernado para a mestra guardar de lembrança.
+          </p>
+<!-- Barra de progresso para as 50 mensagens -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Progresso para o 1º Volume</span>
+<strong class="text-primary font-bold">48 / 50</strong>
+</div>
+<div class="w-full h-2.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 96%;"></div>
+</div>
+<span class="text-[11px] text-outline font-label-sm">Faltam apenas 2 mensagens para a impressão!</span>
+</div>
+<button class="w-full py-2.5 px-4 rounded-xl bg-surface text-primary hover:bg-surface-container-high transition-colors font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span>Solicitar Prévia do Livrinho</span>
+</button>
+</section>
+</aside>
+</div>
+</div>
+</div></main></div></body></html>
