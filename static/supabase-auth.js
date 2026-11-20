@@ -1,8 +1,17 @@
+/**
+ * Script de Autenticação com Supabase para o Projeto Feito no Seridó
+ * Gerencia login, cadastro, recuperação de senha, login social e autenticação via SMS (OTP).
+ */
 (() => {
   let clientPromise;
   let phoneForOtp = "";
   let otpCodeSent = false;
 
+  /**
+   * Exibe mensagens de feedback (toasts) na tela para o usuário.
+   * @param {string} message - A mensagem a ser exibida.
+   * @param {boolean} success - Define se é uma mensagem de sucesso (verde) ou erro (vermelha/primária).
+   */
   function showAuthMessage(message, success = true) {
     const container = document.getElementById("toast-container");
     if (!container) return;
@@ -16,9 +25,14 @@
     text.textContent = message;
     toast.append(icon, text);
     container.appendChild(toast);
+    // Remove o toast automaticamente após 5 segundos
     window.setTimeout(() => toast.remove(), 5000);
   }
 
+  /**
+   * Inicializa e retorna a instância do cliente Supabase de forma assíncrona (Singleton).
+   * Busca as credenciais de configuração na API do backend Flask.
+   */
   async function getClient() {
     if (!clientPromise) {
       clientPromise = (async () => {
@@ -32,6 +46,11 @@
     return clientPromise;
   }
 
+  /**
+   * Traduz erros técnicos do Supabase em mensagens amigáveis para o usuário final.
+   * @param {Error} error - O objeto de erro retornado pelo Supabase.
+   * @returns {string} Mensagem traduzida e compreensível.
+   */
   function friendlyError(error) {
     const message = error?.message || "Ocorreu um erro inesperado. Tente novamente.";
     if (/invalid login credentials/i.test(message)) return "E-mail ou senha inválidos.";
@@ -41,6 +60,13 @@
     return message;
   }
 
+  /**
+   * Determina a página de destino do usuário com base no seu papel (role) no sistema.
+   * Verifica primeiro nos metadados do usuário e depois na tabela "profiles" do banco.
+   * @param {object} client - Cliente do Supabase.
+   * @param {object} user - Objeto do usuário autenticado.
+   * @returns {string} Rota de redirecionamento (/painel_produtores ou /home).
+   */
   async function destinationForUser(client, user) {
     let role = user.user_metadata?.role;
     const { data } = await client.from("profiles").select("role").eq("id", user.id).maybeSingle();
@@ -48,10 +74,16 @@
     return role === "artisan" ? "/painel_produtores" : "/home";
   }
 
+  /**
+   * Redireciona o usuário para a sua respectiva página baseada no perfil.
+   */
   async function goToUserPage(client, user) {
     window.location.assign(await destinationForUser(client, user));
   }
 
+  /**
+   * Alterna o estado visual de carregamento (loading) do botão de envio do formulário.
+   */
   function setBusy(form, busy) {
     const button = form?.querySelector('button[type="submit"]');
     if (!button) return;
@@ -60,8 +92,12 @@
     button.classList.toggle("opacity-60", busy);
   }
 
+  // Expõe a função de toast globalmente
   window.showToast = showAuthMessage;
 
+  /**
+   * Manipula o envio do formulário de Login tradicional (E-mail e Senha).
+   */
   window.handleLoginSubmit = async (event) => {
     event.preventDefault();
     const form = event.currentTarget;
@@ -81,6 +117,10 @@
     }
   };
 
+  /**
+   * Manipula o envio do formulário de Cadastro de nova conta.
+   * Coleta dados adicionais (como nome, WhatsApp, tipo de usuário e dados de artesão, se aplicável).
+   */
   window.handleRegisterSubmit = async (event) => {
     event.preventDefault();
     const form = event.currentTarget;
@@ -127,6 +167,9 @@
     }
   };
 
+  /**
+   * Gerencia o login social (OAuth) utilizando provedores externos (ex: Google).
+   */
   window.simulateSocialLogin = async (provider) => {
     if (provider !== "Google") return;
     try {
@@ -141,6 +184,9 @@
     }
   };
 
+  /**
+   * Abre o modal e reseta o estado para o fluxo de login rápido via WhatsApp/SMS (OTP).
+   */
   window.triggerWhatsAppFastLogin = () => {
     phoneForOtp = "";
     otpCodeSent = false;
@@ -150,11 +196,15 @@
     document.getElementById("otp-modal").classList.remove("hidden");
   };
 
+  /**
+   * Controla as etapas do OTP (envio do código SMS e posterior verificação do token digitado).
+   */
   window.proceedOtpSimulation = async () => {
     const button = document.getElementById("btn-send-otp");
     button.disabled = true;
     try {
       const client = await getClient();
+      // Etapa 1: Enviar o código para o telefone informado
       if (!otpCodeSent) {
         const digits = document.getElementById("otp-phone-input").value.replace(/\D/g, "");
         const normalizedPhone = digits.startsWith("55") ? digits : `55${digits}`;
@@ -174,6 +224,7 @@
         return;
       }
 
+      // Etapa 2: Validar o token informado pelo usuário
       const token = document.getElementById("otp-code-input").value.trim();
       const { data, error } = await client.auth.verifyOtp({ phone: phoneForOtp, token, type: "sms" });
       if (error) throw error;
@@ -185,6 +236,9 @@
     }
   };
 
+  /**
+   * Envia o e-mail de solicitação de recuperação de senha.
+   */
   window.handleForgotSubmit = async () => {
     const email = document.getElementById("forgot-input").value.trim();
     if (!email) {
@@ -204,6 +258,10 @@
     }
   };
 
+  /**
+   * Modifica dinamicamente o modal para exibir o formulário de definição de nova senha
+   * quando o usuário acessa o sistema através do link de recuperação enviado por e-mail.
+   */
   function showPasswordRecovery() {
     const modal = document.getElementById("forgot-modal");
     const panel = modal.querySelector(":scope > div");
@@ -215,6 +273,8 @@
         <button class="w-full h-11 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg font-bold" type="submit">Salvar nova senha</button>
       </form>`;
     modal.classList.remove("hidden");
+    
+    // Escuta o envio da nova senha para atualizar no Supabase
     document.getElementById("recovery-form").addEventListener("submit", async (event) => {
       event.preventDefault();
       const password = document.getElementById("recovery-password").value;
@@ -231,10 +291,14 @@
     });
   }
 
+  // Inicialização e escuta de eventos de estado de autenticação ao carregar a página
   getClient().then(async (client) => {
+    // Monitora eventos de mudança de estado do Auth do Supabase
     client.auth.onAuthStateChange((event, session) => {
       if (event === "PASSWORD_RECOVERY") window.setTimeout(showPasswordRecovery, 0);
     });
+    
+    // Verifica se já existe uma sessão ativa e se a URL contém parâmetros de callback de autenticação
     const { data: { session } } = await client.auth.getSession();
     const isAuthCallback = new URLSearchParams(window.location.search).has("code") || window.location.hash.includes("access_token=");
     if (session && isAuthCallback) await goToUserPage(client, session.user);
