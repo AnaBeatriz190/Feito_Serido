@@ -21,3 +21,63 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+.icon-filled {
+  font-variation-settings: "FILL" 1 !important;
+}
+
+.icon-half-filled {
+  font-variation-settings: "FILL" 0.5 !important;
+}
+
+.background-producers {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD8l6udcfUC-4hsj62ms6EfCQ4do89u5KF6RppAQM7O4UWMA00hP1l6ikUtGKjYgWDyUqOSfO-HN0BrYpwx10AS_p8C31O7TKTlBEo6Ei4f9KJhLzjFUbXlmlzV2q2fzDZDwu1QZM4I6ACLny-3pGKPE6aLnpRHE6W44UG0RsYFQ9zV-6JcGzT7QYIDbE2XDQoys5b2iDHk18qq0qrZxCCd2l7jKn_h1u6uC5Rp2Ptq6XBWQ96ZV0E25A") !important;
+}
+
+.background-login {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA60b5MAILWrB3CfEc_vwqj7XGCWNipki_8DwGPyAQRyLIjfL4xMr912AInQOZcVByqXJTwAoiP8DXEMG1m3wnrlMuw2zCIjB9SzffLQt8uGi0bw4VrP7cdonT2gW5PNefSvOjMRVFnxTCfW65w0s4YXs8IJC4LgHmR2OX_ibkYDrIrHuokUUO9zaYIZyHj8s7kq1hKEi2_0RLua5t5OgQw5fCEFOVg8Ivs_p8nTxNcL0hjGnOzsFoJNg") !important;
+}
+
+.background-products {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1pKjUlhUfVM2QssKpjjwUUGR25DI3AM2xMwT5DkfE_NIyZ3YTaxkUBdVPvjYQuBBT1mJBwpSUwHfRoRj58sm7mDescoN10pZ7cBfwRkXNbjLK9PSv9gGK9Se18qRPOvKw1MrXuFub65JKSyfOxgVSzCdRZZYeGPNABRlXaFRqQJew0eyNvHka3dm37SCQ1pRnqFN6SP_JT2FgUsg0XcBHwkqG3sZuxaxbBE8vtfnk87d0WPEPReLJaQ") !important;
+}
+
+.background-about {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDqkW-gqO7zXQZuA6Bk6c844mrHJvFVxaWAI40Mw9vZ8hR5bo_Zcs-UdokJ9S6HuqHEi5QUWyvIasNkrCZuaDaF3q6KbIA-FXTuhQ1cgGsINTFJ1I3yULe3Q8yjPmTNMmc6nYMhC_1Q-QB4pRccOgYYJLmDl0FXxGvlLJyAYUb4Mqqks9N9jlFG3fBr7CmqH2hKsmaDrqwq7hDn7GHcEFDeJU5214viz1E8_uEOkI_13EHy9ETiBkqhzw") !important;
+}
+
+.product-swatch-sand {
+  background-color: #e6dcb8 !important;
+}
+
+.product-swatch-light {
+  background-color: #f8f9fa !important;
+}
+
+.product-swatch-leather {
+  background-color: #d2b79a !important;
+}
+
+.rating-fill {
+  width: 96% !important;
+}
+
+.producer-progress {
+  width: 75% !important;
+}
+
+.order-progress-complete {
+  width: 73.8% !important;
+}
+
+.order-progress-shipping {
+  width: 17.2% !important;
+}
+
+.order-progress-pending {
+  width: 7.2% !important;
+}
+
+.order-progress-cancelled {
+  width: 1.8% !important;
+}
